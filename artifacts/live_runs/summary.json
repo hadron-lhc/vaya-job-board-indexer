@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-10T21:17:43.560737+00:00",
+  "config": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/config/sources.json",
+  "sources": {
+    "greenhouse-stripe": {
+      "platform": "greenhouse",
+      "tenant": "stripe",
+      "employer": "Stripe",
+      "status": "success",
+      "jobs_discovered": 775,
+      "jobs_processed": 775,
+      "jobs_inserted": 0,
+      "jobs_updated": 775,
+      "pagination": {
+        "total": 775,
+        "returned": 775,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/greenhouse-stripe/45167180c120470a862b8d88ef1611bd.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-stripe.json",
+      "error": null
+    },
+    "greenhouse-airbnb": {
+      "platform": "greenhouse",
+      "tenant": "airbnb",
+      "employer": "Airbnb",
+      "status": "success",
+      "jobs_discovered": 201,
+      "jobs_processed": 201,
+      "jobs_inserted": 0,
+      "jobs_updated": 201,
+      "pagination": {
+        "total": 201,
+        "returned": 201,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/greenhouse-airbnb/6e25b6fa867b44aaa320ea79a217118f.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-airbnb.json",
+      "error": null
+    },
+    "lever-palantir": {
+      "platform": "lever",
+      "tenant": "palantir",
+      "employer": "Palantir",
+      "status": "success",
+      "jobs_discovered": 304,
+      "jobs_processed": 304,
+      "jobs_inserted": 0,
+      "jobs_updated": 304,
+      "pagination": {
+        "page_size": 100,
+        "pages": 4,
+        "returned": 304,
+        "complete": true
+      },
+      "request_urls": [
+        "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=0",
+        "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=100",
+        "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=200",
+        "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=300"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/lever-palantir/e5252cd9d7f54720acd63ac5b8d4c1a0.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-palantir.json",
+      "error": null
+    },
+    "lever-spotify": {
+      "platform": "lever",
+      "tenant": "spotify",
+      "employer": "Spotify",
+      "status": "success",
+      "jobs_discovered": 85,
+      "jobs_processed": 85,
+      "jobs_inserted": 0,
+      "jobs_updated": 85,
+      "pagination": {
+        "page_size": 100,
+        "pages": 1,
+        "returned": 85,
+        "complete": true
+      },
+      "request_urls": [
+        "https://api.lever.co/v0/postings/spotify?mode=json&limit=100&skip=0"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/lever-spotify/4f8a0c3608d147a2a923bcf3d06254be.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-spotify.json",
+      "error": null
+    }
+  }
+}

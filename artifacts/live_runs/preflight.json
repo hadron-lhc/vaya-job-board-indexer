@@ -1,0 +1,256 @@
+{
+  "checked_at": "2026-11-10T21:06:08.596948+00:00",
+  "user_agent": "vaya-job-board-indexer/0.1 (research; contact: local)",
+  "records": [
+    {
+      "platform": "greenhouse",
+      "employer": "stripe",
+      "source_url": "https://boards.greenhouse.io/stripe",
+      "request_url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
+      "final_url": "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true",
+      "timestamp": "2026-11-10T21:05:54.552090+00:00",
+      "http_status": 200,
+      "jobs_returned": 775,
+      "fields_available": [
+        "absolute_url",
+        "ai_disclaimer",
+        "ai_opt_out_request_url",
+        "application_deadline",
+        "company_name",
+        "content",
+        "data_compliance",
+        "departments",
+        "education",
+        "first_published",
+        "id",
+        "include_ai_disclaimer",
+        "internal_job_id",
+        "language",
+        "location",
+        "metadata",
+        "offices",
+        "requisition_id",
+        "title",
+        "updated_at"
+      ],
+      "pagination": {
+        "meta": {
+          "total": 775
+        },
+        "request_returns_all": true
+      },
+      "errors_or_limitations": []
+    },
+    {
+      "platform": "greenhouse",
+      "employer": "airbnb",
+      "source_url": "https://boards.greenhouse.io/airbnb",
+      "request_url": "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true",
+      "final_url": "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true",
+      "timestamp": "2026-11-10T21:05:55.240522+00:00",
+      "http_status": 200,
+      "jobs_returned": 202,
+      "fields_available": [
+        "absolute_url",
+        "ai_disclaimer",
+        "ai_opt_out_request_url",
+        "application_deadline",
+        "company_name",
+        "content",
+        "data_compliance",
+        "departments",
+        "first_published",
+        "id",
+        "include_ai_disclaimer",
+        "internal_job_id",
+        "language",
+        "location",
+        "metadata",
+        "offices",
+        "requisition_id",
+        "title",
+        "updated_at"
+      ],
+      "pagination": {
+        "meta": {
+          "total": 202
+        },
+        "request_returns_all": true
+      },
+      "errors_or_limitations": []
+    },
+    {
+      "platform": "lever",
+      "employer": "palantir",
+      "api_host": "api.lever.co",
+      "source_url": "https://jobs.lever.co/palantir",
+      "request_url": "https://api.lever.co/v0/postings/palantir?mode=json&limit=5&skip=0",
+      "final_url": "https://api.lever.co/v0/postings/palantir?mode=json&limit=5&skip=0",
+      "timestamp": "2026-11-10T21:05:57.541500+00:00",
+      "http_status": 200,
+      "jobs_returned": 5,
+      "fields_available": [
+        "additional",
+        "additionalPlain",
+        "applyUrl",
+        "categories",
+        "country",
+        "createdAt",
+        "description",
+        "descriptionBody",
+        "descriptionBodyPlain",
+        "descriptionPlain",
+        "hostedUrl",
+        "id",
+        "lists",
+        "opening",
+        "openingPlain",
+        "text",
+        "workplaceType"
+      ],
+      "pagination": {
+        "page_size": 5,
+        "page_0_count": 5,
+        "page_1_count": 5,
+        "page_0_ids": [
+          "6ed76ce8-4156-4b60-b120-403538bd66cd",
+          "0ccbe620-a3ef-41d1-a5c4-68e56b3c91d0",
+          "10dfc8bc-99ad-4ca2-ab76-853cb90a92c2",
+          "ab7e3425-81d5-4705-a7b5-cd60c8a45cdb",
+          "9aadca04-df88-4b46-95d8-c3b2628b30b0"
+        ],
+        "page_1_ids": [
+          "1345438c-ebfc-4fa5-b545-30c1414f317c",
+          "a8174f9c-6f46-46b4-8e15-d1ff9e37c9eb",
+          "d33e0c31-ac7e-4f57-ba74-36f2df6ae2f5",
+          "6fe5515f-f677-4d98-8ac2-1775a425f5e7",
+          "f70cdff7-c62f-4b73-a136-909e5e3d1891"
+        ],
+        "overlap": [],
+        "page_1_http_status": 200,
+        "page_1_request_url": "https://api.lever.co/v0/postings/palantir?mode=json&limit=5&skip=5"
+      },
+      "errors_or_limitations": []
+    },
+    {
+      "platform": "lever",
+      "employer": "spotify",
+      "api_host": "api.lever.co",
+      "source_url": "https://jobs.lever.co/spotify",
+      "request_url": "https://api.lever.co/v0/postings/spotify?mode=json&limit=5&skip=0",
+      "final_url": "https://api.lever.co/v0/postings/spotify?mode=json&limit=5&skip=0",
+      "timestamp": "2026-11-10T21:06:01.193322+00:00",
+      "http_status": 200,
+      "jobs_returned": 5,
+      "fields_available": [
+        "additional",
+        "additionalPlain",
+        "applyUrl",
+        "categories",
+        "country",
+        "createdAt",
+        "description",
+        "descriptionBody",
+        "descriptionBodyPlain",
+        "descriptionPlain",
+        "hostedUrl",
+        "id",
+        "lists",
+        "opening",
+        "openingPlain",
+        "text",
+        "workplaceType"
+      ],
+      "pagination": {
+        "page_size": 5,
+        "page_0_count": 5,
+        "page_1_count": 5,
+        "page_0_ids": [
+          "2a55d6c9-c564-443a-be3e-a3851db5a93b",
+          "2d67c471-9015-41c0-a041-b982ec4a14fd",
+          "f263a2af-0a4e-4540-a0f6-adb3655e027b",
+          "cf13d272-92ac-407d-89bf-7f20d20f7961",
+          "a4651332-6400-40e8-8c22-5491e7a34161"
+        ],
+        "page_1_ids": [
+          "93b9a474-0e4e-4214-9c9a-974496478068",
+          "9838a290-bd6a-4233-acc3-bc5e4e6fa9c4",
+          "785989a6-b219-43b1-92d9-750a67054f24",
+          "186b763a-2a61-4563-8813-ff6b40c9c8a7",
+          "926149ab-6999-4058-b35d-41e302b70e05"
+        ],
+        "overlap": [],
+        "page_1_http_status": 200,
+        "page_1_request_url": "https://api.lever.co/v0/postings/spotify?mode=json&limit=5&skip=5"
+      },
+      "errors_or_limitations": []
+    },
+    {
+      "platform": "lever",
+      "employer": "palantir",
+      "api_host": "api.eu.lever.co",
+      "source_url": "https://jobs.lever.co/palantir",
+      "request_url": "https://api.eu.lever.co/v0/postings/palantir?mode=json",
+      "final_url": "https://api.eu.lever.co/v0/postings/palantir?mode=json",
+      "timestamp": "2026-11-10T21:06:04.078723+00:00",
+      "http_status": 404,
+      "jobs_returned": null,
+      "fields_available": [],
+      "pagination": {},
+      "errors_or_limitations": [
+        "HTTP 404: b'{\"ok\":false,\"error\":\"Document not found\"}'"
+      ]
+    },
+    {
+      "platform": "lever",
+      "employer": "spotify",
+      "api_host": "api.eu.lever.co",
+      "source_url": "https://jobs.lever.co/spotify",
+      "request_url": "https://api.eu.lever.co/v0/postings/spotify?mode=json",
+      "final_url": "https://api.eu.lever.co/v0/postings/spotify?mode=json",
+      "timestamp": "2026-11-10T21:06:05.289724+00:00",
+      "http_status": 404,
+      "jobs_returned": null,
+      "fields_available": [],
+      "pagination": {},
+      "errors_or_limitations": [
+        "HTTP 404: b'{\"ok\":false,\"error\":\"Document not found\"}'"
+      ]
+    },
+    {
+      "platform": "lever",
+      "employer": "leverdemo",
+      "api_host": "api.eu.lever.co",
+      "source_url": "https://jobs.lever.co/leverdemo",
+      "request_url": "https://api.eu.lever.co/v0/postings/leverdemo?mode=json",
+      "final_url": "https://api.eu.lever.co/v0/postings/leverdemo?mode=json",
+      "timestamp": "2026-11-10T21:06:08.565486+00:00",
+      "http_status": 200,
+      "jobs_returned": 324,
+      "fields_available": [
+        "additional",
+        "additionalPlain",
+        "applyUrl",
+        "categories",
+        "country",
+        "createdAt",
+        "description",
+        "descriptionBody",
+        "descriptionBodyPlain",
+        "descriptionPlain",
+        "hostedUrl",
+        "id",
+        "lists",
+        "opening",
+        "openingPlain",
+        "text",
+        "workplaceType"
+      ],
+      "pagination": {
+        "request_returns_all": true,
+        "supports_skip_limit": true
+      },
+      "errors_or_limitations": []
+    }
+  ]
+}
