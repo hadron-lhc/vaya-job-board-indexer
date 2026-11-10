@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import html as html_module
+import re
 from datetime import datetime, timezone
 from typing import Any
 
@@ -105,3 +107,25 @@ def epoch_ms_to_iso(value: Any) -> str | None:
     if isinstance(value, (int, float)):
         return datetime.fromtimestamp(value / 1000.0, tz=timezone.utc).isoformat()
     return None
+
+
+def html_to_text(value: str | None) -> str:
+    if not value:
+        return ""
+    text = re.sub(r"(?is)<(script|style).*?>.*?</\1>", " ", value)
+    text = re.sub(r"(?i)<br\s*/?>", " ", text)
+    text = re.sub(r"(?i)</p\s*>", " ", text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html_module.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_key(value: Any) -> str | None:
+    text = non_empty_str(value)
+    if text is None:
+        return None
+    text = html_module.unescape(text).lower()
+    text = re.sub(r"&", " and ", text)
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    text = re.sub(r"-+", "-", text).strip("-")
+    return text or None

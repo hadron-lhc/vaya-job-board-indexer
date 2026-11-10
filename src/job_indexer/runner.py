@@ -7,8 +7,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import httpx
+
 from .connectors.base import Connector
 from .db import (
+    apply_source_scan,
     connect,
     create_fetch_run,
     finish_fetch_run,
@@ -16,7 +19,7 @@ from .db import (
     upsert_jobs,
     upsert_source_instance,
 )
-from .errors import PartialFetchError
+from .errors import HttpError, InvalidResponseError, PartialFetchError
 from .models import FetchBatch, FetchResult, JobListing, SourceConfig
 from .utils import utc_now_iso
 
@@ -68,6 +71,27 @@ def _fields_available(jobs: list[JobListing]) -> list[str]:
     return sorted(fields)
 
 
+def _classify_exception(exc: BaseException) -> tuple[str, str | None]:
+    if isinstance(exc, PartialFetchError):
+        cause = exc.__cause__
+        if isinstance(cause, BaseException):
+            return "PARTIAL_SUCCESS", _classify_exception(cause)[1]
+        return "PARTIAL_SUCCESS", None
+    if isinstance(exc, HttpError):
+        if exc.status_code == 429:
+            return "RATE_LIMITED", "rate_limited"
+        if exc.status_code in {401, 403}:
+            return "UNAUTHORIZED" if exc.status_code == 401 else "BLOCKED", "http_access_denied"
+        if exc.status_code and exc.status_code >= 500:
+            return "FAILED", "upstream_server_error"
+        return "FAILED", "http_error"
+    if isinstance(exc, InvalidResponseError):
+        return "SCHEMA_CHANGED", "invalid_response"
+    if isinstance(exc, (httpx.TimeoutException, TimeoutError)):
+        return "TIMEOUT", "timeout"
+    return "FAILED", type(exc).__name__
+
+
 def run_fetch(
     source: SourceConfig,
     connector: Connector,
@@ -79,6 +103,7 @@ def run_fetch(
     started_at = utc_now_iso()
     started_monotonic = time.monotonic()
     checked_at = checked_at or datetime.now(timezone.utc)
+    checked_iso = checked_at.isoformat()
     conn = connect(db_path)
     init_db(conn)
     upsert_source_instance(conn, source)
@@ -89,32 +114,46 @@ def run_fetch(
     jobs: list[JobListing] = []
     inserted = 0
     updated = 0
-    status = "failed"
+    changed = 0
+    missing = 0
+    closed = 0
+    status = "FAILED"
     error: str | None = None
+    error_class: str | None = None
 
     try:
         try:
             batch = connector.fetch(source)
-            status = "success"
+            status = "SUCCESS"
         except PartialFetchError as exc:
             batch = exc.batch
             error = str(exc)
-            status = "partial"
+            status, error_class = _classify_exception(exc)
         except Exception as exc:
             error = f"{type(exc).__name__}: {exc}"
-            status = "failed"
+            status, error_class = _classify_exception(exc)
 
         if batch is not None:
             raw_payload_path = _save_raw_payloads(
                 artifacts_dir, source, run_id, batch.raw_payloads
             )
             jobs = _normalize_batch(connector, batch, source, checked_at)
-            inserted, updated = upsert_jobs(conn, jobs)
+            inserted, updated, changed = upsert_jobs(conn, jobs)
+            if status == "SUCCESS" and batch.complete:
+                missing, closed = apply_source_scan(
+                    conn,
+                    source=source,
+                    seen_external_ids=(job.external_job_id for job in jobs),
+                    checked_at=checked_iso,
+                    complete=True,
+                )
     except Exception as exc:
         conn.rollback()
         detail = f"{type(exc).__name__}: {exc}"
         error = f"{error}; {detail}" if error else detail
-        status = "failed"
+        status, error_class = _classify_exception(exc)
+        missing = 0
+        closed = 0
     finally:
         completed_at = utc_now_iso()
         duration_ms = int((time.monotonic() - started_monotonic) * 1000)
@@ -132,7 +171,11 @@ def run_fetch(
                 jobs_processed=jobs_processed,
                 jobs_inserted=inserted,
                 jobs_updated=updated,
+                jobs_changed=changed,
+                jobs_missing=missing,
+                jobs_closed=closed,
                 error_details=error,
+                error_class=error_class,
                 duration_ms=duration_ms,
                 raw_payload_path=raw_payload_path,
                 pagination=pagination,
@@ -150,7 +193,11 @@ def run_fetch(
         jobs_processed=jobs_processed,
         jobs_inserted=inserted,
         jobs_updated=updated,
+        jobs_changed=changed,
+        jobs_missing=missing,
+        jobs_closed=closed,
         error=error,
+        error_class=error_class,
         duration_ms=duration_ms,
         request_urls=batch.request_urls if batch is not None else [],
         source_url=batch.source_url if batch is not None else None,

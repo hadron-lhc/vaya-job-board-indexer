@@ -42,7 +42,7 @@ def test_successful_fetch_persists_jobs_and_is_idempotent(tmp_path: Path) -> Non
 
     first = run_fetch(source, connector, db_path=db_path, artifacts_dir=artifacts_dir)
 
-    assert first.status == "success"
+    assert first.status == "SUCCESS"
     assert first.jobs_discovered == 2
     assert first.jobs_processed == 2
     assert first.jobs_inserted == 2
@@ -55,12 +55,12 @@ def test_successful_fetch_persists_jobs_and_is_idempotent(tmp_path: Path) -> Non
     assert get_job_count(conn, source.name) == 2
     run = get_fetch_run(conn, first.run_id)
     assert run is not None
-    assert run["status"] == "success"
+    assert run["status"] == "SUCCESS"
     conn.close()
 
     second = run_fetch(source, connector, db_path=db_path, artifacts_dir=artifacts_dir)
 
-    assert second.status == "success"
+    assert second.status == "SUCCESS"
     assert second.jobs_inserted == 0
     assert second.jobs_updated == 2
     conn = connect(db_path)
@@ -76,7 +76,7 @@ def test_failed_fetch_is_recorded_and_does_not_create_jobs(tmp_path: Path) -> No
 
     result = run_fetch(source, connector, db_path=db_path, artifacts_dir=tmp_path / "artifacts")
 
-    assert result.status == "failed"
+    assert result.status == "FAILED"
     assert result.jobs_discovered == 0
     assert result.jobs_processed == 0
     assert result.error is not None
@@ -87,7 +87,7 @@ def test_failed_fetch_is_recorded_and_does_not_create_jobs(tmp_path: Path) -> No
     assert get_job_count(conn, source.name) == 0
     run = get_fetch_run(conn, result.run_id)
     assert run is not None
-    assert run["status"] == "failed"
+    assert run["status"] == "FAILED"
     assert "HTTP 500" in run["error_details"]
     conn.close()
 
@@ -101,7 +101,7 @@ def test_normalization_failure_is_recorded_as_failed(tmp_path: Path) -> None:
 
     result = run_fetch(source, connector, db_path=db_path, artifacts_dir=tmp_path / "artifacts")
 
-    assert result.status == "failed"
+    assert result.status == "SCHEMA_CHANGED"
     assert result.jobs_discovered == 1
     assert result.jobs_processed == 0
     assert result.error is not None
@@ -112,7 +112,7 @@ def test_normalization_failure_is_recorded_as_failed(tmp_path: Path) -> None:
     assert get_job_count(conn, source.name) == 0
     run = get_fetch_run(conn, result.run_id)
     assert run is not None
-    assert run["status"] == "failed"
+    assert run["status"] == "SCHEMA_CHANGED"
     conn.close()
 
 
@@ -138,7 +138,7 @@ def test_partial_fetch_persists_jobs_and_records_partial_status(tmp_path: Path) 
 
     result = run_fetch(source, connector, db_path=db_path, artifacts_dir=tmp_path / "artifacts")
 
-    assert result.status == "partial"
+    assert result.status == "PARTIAL_SUCCESS"
     assert result.jobs_discovered == 1
     assert result.jobs_processed == 1
     assert result.jobs_inserted == 1
@@ -150,5 +150,5 @@ def test_partial_fetch_persists_jobs_and_records_partial_status(tmp_path: Path) 
     assert get_job_count(conn, source.name) == 1
     run = get_fetch_run(conn, result.run_id)
     assert run is not None
-    assert run["status"] == "partial"
+    assert run["status"] == "PARTIAL_SUCCESS"
     conn.close()

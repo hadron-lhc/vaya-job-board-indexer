@@ -128,7 +128,11 @@ class FetchResult:
     jobs_processed: int
     jobs_inserted: int
     jobs_updated: int
+    jobs_changed: int
+    jobs_missing: int
+    jobs_closed: int
     error: str | None
+    error_class: str | None
     duration_ms: int
     request_urls: list[str]
     source_url: str | None
@@ -155,7 +159,11 @@ class FetchResult:
             "jobs_processed": self.jobs_processed,
             "jobs_inserted": self.jobs_inserted,
             "jobs_updated": self.jobs_updated,
+            "jobs_changed": self.jobs_changed,
+            "jobs_missing": self.jobs_missing,
+            "jobs_closed": self.jobs_closed,
             "error": self.error,
+            "error_class": self.error_class,
             "raw_payload_path": self.raw_payload_path,
             "fields_available": list(self.fields_available),
             "samples": list(self.samples),

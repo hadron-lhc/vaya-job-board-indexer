@@ -55,11 +55,11 @@ def test_upsert_jobs_is_idempotent_and_preserves_first_seen(tmp_path: Path) -> N
     init_db(conn)
     upsert_source_instance(conn, SOURCE)
 
-    inserted, updated = upsert_jobs(conn, [make_job()])
-    assert (inserted, updated) == (1, 0)
+    inserted, updated, changed = upsert_jobs(conn, [make_job()])
+    assert (inserted, updated, changed) == (1, 0, 0)
     assert get_job_count(conn, SOURCE.name) == 1
 
-    inserted, updated = upsert_jobs(
+    inserted, updated, changed = upsert_jobs(
         conn,
         [
             make_job(
@@ -69,7 +69,7 @@ def test_upsert_jobs_is_idempotent_and_preserves_first_seen(tmp_path: Path) -> N
             )
         ],
     )
-    assert (inserted, updated) == (0, 1)
+    assert (inserted, updated, changed) == (0, 1, 1)
     assert get_job_count(conn, SOURCE.name) == 1
 
     stored = get_job_by_external_id(
@@ -90,9 +90,9 @@ def test_duplicate_external_ids_in_one_batch_do_not_duplicate_rows(tmp_path: Pat
     init_db(conn)
     upsert_source_instance(conn, SOURCE)
 
-    inserted, updated = upsert_jobs(conn, [make_job(), make_job(title="Updated Engineer")])
+    inserted, updated, changed = upsert_jobs(conn, [make_job(), make_job(title="Updated Engineer")])
 
-    assert (inserted, updated) == (1, 1)
+    assert (inserted, updated, changed) == (1, 1, 1)
     assert get_job_count(conn, SOURCE.name) == 1
     stored = get_job_by_external_id(
         conn,
