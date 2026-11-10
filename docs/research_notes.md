@@ -30,14 +30,14 @@ Primary research inputs:
 - `RESEARCHED`: enough desk research and/or live evidence to propose an extraction path. This does not mean the endpoint, tenant, or schema is fully verified.
 - `ACCESS_BLOCKED`: live access failed with 403, DNS failure, or another blocking condition, and no verified workaround exists.
 - `NOT_RESEARCHED`: product identity or public job surface is still unverified.
-- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. Phase 2 now uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse and Lever.
+- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. Phase 3 uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse, Lever, Ashby, Workable, and SmartRecruiters.
 
 Current matrix status counts:
 
 | Status | Count |
 | --- | ---: |
-| `RESEARCHED` | 69 |
-| `LIVE_TESTED_MULTI_TENANT` | 2 |
+| `RESEARCHED` | 66 |
+| `LIVE_TESTED_MULTI_TENANT` | 5 |
 | `ACCESS_BLOCKED` | 6 |
 | `NOT_RESEARCHED` | 1 |
 | Total | 78 |
@@ -293,7 +293,19 @@ Priority 4: resolve identity or access
 9. Niceboard live tenant
 10. Jobvite live tenant
 
-## 10. Source links
+## 10. Phase 3 outcome
+
+Phase 3 selected and implemented Ashby, Workable, and SmartRecruiters from the public structured-feed candidates. Recruitee was not selected because of its documented auth-token requirement starting 2027-02-10. Pinpoint and Personio remain candidates for a later batch; Personio requires XML parsing, and Pinpoint still needs a second verified real tenant. Teamtailor's RSS feed is less complete for descriptions.
+
+The implemented connectors use two real employers per platform:
+
+- Ashby: `ashby`, `openai`
+- Workable: `huggingface`, `runware`
+- SmartRecruiters: `Canva`, `innergy1`
+
+See `docs/phase3_report.md` for ranking, evidence, tests, and limitations.
+
+## 11. Source links
 
 Official documentation and platform pages:
 

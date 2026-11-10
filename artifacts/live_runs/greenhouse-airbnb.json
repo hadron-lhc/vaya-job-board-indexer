@@ -1,28 +1,28 @@
 {
-  "run_id": "6e25b6fa867b44aaa320ea79a217118f",
+  "run_id": "25d51c52329a4261896d30139d5102ca",
   "platform": "greenhouse",
   "source_instance": "greenhouse-airbnb",
   "employer": "Airbnb",
   "tenant": "airbnb",
   "status": "success",
-  "started_at": "2026-11-10T21:17:45.184275+00:00",
-  "completed_at": "2026-11-10T21:17:46.612218+00:00",
-  "duration_ms": 1427,
+  "started_at": "2026-11-10T21:48:03.932600+00:00",
+  "completed_at": "2026-11-10T21:48:04.570767+00:00",
+  "duration_ms": 638,
   "source_url": "https://boards.greenhouse.io/airbnb",
   "request_urls": [
     "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true"
   ],
   "pagination": {
-    "total": 201,
-    "returned": 201,
+    "total": 203,
+    "returned": 203,
     "pagination_required": false
   },
-  "jobs_discovered": 201,
-  "jobs_processed": 201,
+  "jobs_discovered": 203,
+  "jobs_processed": 203,
   "jobs_inserted": 0,
-  "jobs_updated": 201,
+  "jobs_updated": 203,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/greenhouse-airbnb/6e25b6fa867b44aaa320ea79a217118f.json",
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-airbnb/25d51c52329a4261896d30139d5102ca.json",
   "fields_available": [
     "company",
     "description",
@@ -52,25 +52,8 @@
       "employment_type": null,
       "remote_status": "unknown",
       "original_posted_at": "2026-11-10T04:49:33-05:00",
-      "first_seen_at": "2026-11-10T21:17:45.184312+00:00",
-      "last_checked_at": "2026-11-10T21:17:45.184312+00:00"
-    },
-    {
-      "platform": "greenhouse",
-      "source_instance": "greenhouse-airbnb",
-      "external_job_id": "8306554",
-      "title": "AirCover Specialist, Claims Experience",
-      "company": "Airbnb",
-      "description": "<div class=\"content-intro\"><p><span style=\"font-family: helvetica, arial, sans-serif; font-size: 12pt;\">Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.</span></p></div><p><span style=\"fo...[truncated]",
-      "location": "Canada",
-      "source_url": "https://careers.airbnb.com/positions/8306554?gh_jid=8306554",
-      "application_url": null,
-      "salary": null,
-      "employment_type": null,
-      "remote_status": "unknown",
-      "original_posted_at": "2026-10-28T10:52:05-04:00",
-      "first_seen_at": "2026-11-10T21:17:45.184312+00:00",
-      "last_checked_at": "2026-11-10T21:17:45.184312+00:00"
+      "first_seen_at": "2026-11-10T21:48:03.932630+00:00",
+      "last_checked_at": "2026-11-10T21:48:03.932630+00:00"
     },
     {
       "platform": "greenhouse",
@@ -86,8 +69,25 @@
       "employment_type": null,
       "remote_status": "unknown",
       "original_posted_at": "2026-11-02T03:52:24-05:00",
-      "first_seen_at": "2026-11-10T21:17:45.184312+00:00",
-      "last_checked_at": "2026-11-10T21:17:45.184312+00:00"
+      "first_seen_at": "2026-11-10T21:48:03.932630+00:00",
+      "last_checked_at": "2026-11-10T21:48:03.932630+00:00"
+    },
+    {
+      "platform": "greenhouse",
+      "source_instance": "greenhouse-airbnb",
+      "external_job_id": "8306554",
+      "title": "AirCover Specialist, Claims Experience",
+      "company": "Airbnb",
+      "description": "<div class=\"content-intro\"><p><span style=\"font-family: helvetica, arial, sans-serif; font-size: 12pt;\">Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.</span></p></div><p><span style=\"fo...[truncated]",
+      "location": "Canada",
+      "source_url": "https://careers.airbnb.com/positions/8306554?gh_jid=8306554",
+      "application_url": null,
+      "salary": null,
+      "employment_type": null,
+      "remote_status": "unknown",
+      "original_posted_at": "2026-10-28T10:52:05-04:00",
+      "first_seen_at": "2026-11-10T21:48:03.932630+00:00",
+      "last_checked_at": "2026-11-10T21:48:03.932630+00:00"
     }
   ]
 }

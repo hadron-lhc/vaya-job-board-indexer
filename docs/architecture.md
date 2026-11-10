@@ -1,6 +1,6 @@
 # Architecture
 
-Status: Phase 1 proposal. No application code exists yet.
+Status: Phase 3 implementation. The connector contract, normalized model, and fetch-run behavior below reflect the implemented vertical slice.
 
 ## 1. Goals
 
@@ -579,32 +579,36 @@ This dashboard is the handoff artifact that prevents overclaiming.
 - Research 78 platforms.
 - Create matrix, notes, feasibility report, and architecture.
 
-### Phase 2 (next)
+### Phase 2 (complete)
 
 - Core framework.
 - SQLite schema.
 - Fetch runner.
-- First 6 connectors: Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee.
-- Fixture tests and live smoke tests.
+- Greenhouse and Lever connectors.
+- Fixture tests, live smoke tests, and live evidence.
 
-### Phase 3
+### Phase 3 (complete)
 
-- Personio, Teamtailor, Pinpoint, Rippling, Workday.
+- Ashby, Workable, and SmartRecruiters connectors.
+- Two verified real employer instances per platform.
+- SmartRecruiters list pagination and detail fetching.
+- Fixture tests, live smoke tests, and live evidence.
+
+### Phase 4 (next)
+
+- Recruitee re-evaluation before its 2027-02-10 auth deadline.
+- Personio, Teamtailor, Pinpoint, Rippling, and Workday connectors.
 - HTML/JSON-LD extractors.
 - Search API and UI.
 
-### Phase 4
+### Phase 5
 
 - Deduplication and closure.
 - Scheduler and observability.
 - Coverage dashboard.
 - Deployment and handoff docs.
-
-### Phase 5
-
 - Remaining public HTML connectors.
 - Authenticated/contract platforms when access is available.
-- Multi-tenant verification.
 
 ## 22. Key tradeoffs
 

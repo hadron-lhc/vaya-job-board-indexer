@@ -17,6 +17,12 @@ def test_list_sources_prints_configured_sources(capsys) -> None:
     assert "greenhouse-airbnb" in output
     assert "lever-palantir" in output
     assert "lever-spotify" in output
+    assert "ashby-ashby" in output
+    assert "ashby-openai" in output
+    assert "workable-huggingface" in output
+    assert "workable-runware" in output
+    assert "smartrecruiters-canva" in output
+    assert "smartrecruiters-innergy" in output
 
 
 def test_unknown_source_is_rejected(capsys) -> None:

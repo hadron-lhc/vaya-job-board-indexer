@@ -4,7 +4,7 @@
 
 The first Phase 2 vertical slice is implemented and verified for review. It covers Greenhouse and Lever only, with two real employer instances per platform, normalized records, SQLite persistence, fetch-run tracking, deterministic tests, live tests, CLI support, and saved live evidence.
 
-No additional platforms were implemented. No commits were made.
+No additional platforms were implemented. The Phase 2 implementation was committed in `f95f934`, with documentation and evidence in `eda0020`.
 
 ## Scope Delivered
 

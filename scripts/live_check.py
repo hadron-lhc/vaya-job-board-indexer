@@ -20,7 +20,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run live checks for configured job sources.")
     parser.add_argument("--config", type=Path, default=ROOT / "config" / "sources.json")
     parser.add_argument("--db", type=Path, default=ROOT / "data" / "jobs.db")
-    parser.add_argument("--artifacts-dir", type=Path, default=ROOT / "artifacts" / "raw")
+    parser.add_argument("--artifacts-dir", type=Path, default=ROOT / "artifacts")
     parser.add_argument("--evidence-dir", type=Path, default=ROOT / "artifacts" / "live_runs")
     parser.add_argument("--source", action="append", dest="sources")
     return parser.parse_args()

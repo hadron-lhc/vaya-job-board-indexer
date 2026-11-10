@@ -33,6 +33,52 @@
         "api_host": "api.lever.co",
         "page_size": 100
       }
+    },
+    {
+      "name": "ashby-ashby",
+      "platform": "ashby",
+      "tenant": "ashby",
+      "company": "Ashby",
+      "options": {}
+    },
+    {
+      "name": "ashby-openai",
+      "platform": "ashby",
+      "tenant": "openai",
+      "company": "OpenAI",
+      "options": {}
+    },
+    {
+      "name": "workable-huggingface",
+      "platform": "workable",
+      "tenant": "huggingface",
+      "company": "Hugging Face",
+      "options": {}
+    },
+    {
+      "name": "workable-runware",
+      "platform": "workable",
+      "tenant": "runware",
+      "company": "Runware",
+      "options": {}
+    },
+    {
+      "name": "smartrecruiters-canva",
+      "platform": "smartrecruiters",
+      "tenant": "Canva",
+      "company": "Canva",
+      "options": {
+        "page_size": 100
+      }
+    },
+    {
+      "name": "smartrecruiters-innergy",
+      "platform": "smartrecruiters",
+      "tenant": "innergy1",
+      "company": "INNERGY",
+      "options": {
+        "page_size": 100
+      }
     }
   ]
 }

@@ -18,6 +18,12 @@ SOURCE_NAMES = [
     "greenhouse-airbnb",
     "lever-palantir",
     "lever-spotify",
+    "ashby-ashby",
+    "ashby-openai",
+    "workable-huggingface",
+    "workable-runware",
+    "smartrecruiters-canva",
+    "smartrecruiters-innergy",
 ]
 
 
@@ -38,5 +44,5 @@ def test_live_source_returns_normalizable_jobs(source_name: str) -> None:
     assert job.title
     assert job.company
     assert job.source_url.startswith("https://")
-    if source.platform == "lever":
+    if source.platform in {"lever", "ashby", "workable", "smartrecruiters"}:
         assert job.application_url is not None

@@ -1,13 +1,13 @@
 {
-  "run_id": "4f8a0c3608d147a2a923bcf3d06254be",
+  "run_id": "2272603b1d22487dac3d1d155e9cb00a",
   "platform": "lever",
   "source_instance": "lever-spotify",
   "employer": "Spotify",
   "tenant": "spotify",
   "status": "success",
-  "started_at": "2026-11-10T21:17:56.173709+00:00",
-  "completed_at": "2026-11-10T21:17:56.787868+00:00",
-  "duration_ms": 614,
+  "started_at": "2026-11-10T21:48:14.289593+00:00",
+  "completed_at": "2026-11-10T21:48:14.943850+00:00",
+  "duration_ms": 654,
   "source_url": "https://jobs.lever.co/spotify",
   "request_urls": [
     "https://api.lever.co/v0/postings/spotify?mode=json&limit=100&skip=0"
@@ -15,15 +15,15 @@
   "pagination": {
     "page_size": 100,
     "pages": 1,
-    "returned": 85,
+    "returned": 86,
     "complete": true
   },
-  "jobs_discovered": 85,
-  "jobs_processed": 85,
+  "jobs_discovered": 86,
+  "jobs_processed": 86,
   "jobs_inserted": 0,
-  "jobs_updated": 85,
+  "jobs_updated": 86,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/lever-spotify/4f8a0c3608d147a2a923bcf3d06254be.json",
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-spotify/2272603b1d22487dac3d1d155e9cb00a.json",
   "fields_available": [
     "application_url",
     "company",
@@ -55,8 +55,8 @@
       "employment_type": "Permanent",
       "remote_status": "hybrid",
       "original_posted_at": "2026-10-23T15:00:40.768000+00:00",
-      "first_seen_at": "2026-11-10T21:17:56.173731+00:00",
-      "last_checked_at": "2026-11-10T21:17:56.173731+00:00"
+      "first_seen_at": "2026-11-10T21:48:14.289614+00:00",
+      "last_checked_at": "2026-11-10T21:48:14.289614+00:00"
     },
     {
       "platform": "lever",
@@ -72,8 +72,8 @@
       "employment_type": "Permanent",
       "remote_status": "hybrid",
       "original_posted_at": "2026-10-23T21:51:17.203000+00:00",
-      "first_seen_at": "2026-11-10T21:17:56.173731+00:00",
-      "last_checked_at": "2026-11-10T21:17:56.173731+00:00"
+      "first_seen_at": "2026-11-10T21:48:14.289614+00:00",
+      "last_checked_at": "2026-11-10T21:48:14.289614+00:00"
     },
     {
       "platform": "lever",
@@ -89,8 +89,8 @@
       "employment_type": "Permanent",
       "remote_status": "hybrid",
       "original_posted_at": "2026-10-23T15:03:09.073000+00:00",
-      "first_seen_at": "2026-11-10T21:17:56.173731+00:00",
-      "last_checked_at": "2026-11-10T21:17:56.173731+00:00"
+      "first_seen_at": "2026-11-10T21:48:14.289614+00:00",
+      "last_checked_at": "2026-11-10T21:48:14.289614+00:00"
     }
   ]
 }

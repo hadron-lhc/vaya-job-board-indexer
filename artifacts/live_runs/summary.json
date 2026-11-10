@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-10T21:17:43.560737+00:00",
+  "checked_at": "2026-11-10T21:48:02.271274+00:00",
   "config": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/config/sources.json",
   "sources": {
     "greenhouse-stripe": {
@@ -19,7 +19,7 @@
       "request_urls": [
         "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/greenhouse-stripe/45167180c120470a862b8d88ef1611bd.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-stripe/8e76a1eb7f384424a0bff908f4c52aa8.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-stripe.json",
       "error": null
     },
@@ -28,19 +28,19 @@
       "tenant": "airbnb",
       "employer": "Airbnb",
       "status": "success",
-      "jobs_discovered": 201,
-      "jobs_processed": 201,
+      "jobs_discovered": 203,
+      "jobs_processed": 203,
       "jobs_inserted": 0,
-      "jobs_updated": 201,
+      "jobs_updated": 203,
       "pagination": {
-        "total": 201,
-        "returned": 201,
+        "total": 203,
+        "returned": 203,
         "pagination_required": false
       },
       "request_urls": [
         "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/greenhouse-airbnb/6e25b6fa867b44aaa320ea79a217118f.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-airbnb/25d51c52329a4261896d30139d5102ca.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-airbnb.json",
       "error": null
     },
@@ -65,7 +65,7 @@
         "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=200",
         "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=300"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/lever-palantir/e5252cd9d7f54720acd63ac5b8d4c1a0.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-palantir/11d4e827888541639568ec57c52bbd0c.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-palantir.json",
       "error": null
     },
@@ -74,21 +74,200 @@
       "tenant": "spotify",
       "employer": "Spotify",
       "status": "success",
-      "jobs_discovered": 85,
-      "jobs_processed": 85,
+      "jobs_discovered": 86,
+      "jobs_processed": 86,
       "jobs_inserted": 0,
-      "jobs_updated": 85,
+      "jobs_updated": 86,
       "pagination": {
         "page_size": 100,
         "pages": 1,
-        "returned": 85,
+        "returned": 86,
         "complete": true
       },
       "request_urls": [
         "https://api.lever.co/v0/postings/spotify?mode=json&limit=100&skip=0"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/raw/lever-spotify/4f8a0c3608d147a2a923bcf3d06254be.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-spotify/2272603b1d22487dac3d1d155e9cb00a.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-spotify.json",
+      "error": null
+    },
+    "ashby-ashby": {
+      "platform": "ashby",
+      "tenant": "ashby",
+      "employer": "Ashby",
+      "status": "success",
+      "jobs_discovered": 75,
+      "jobs_processed": 75,
+      "jobs_inserted": 0,
+      "jobs_updated": 75,
+      "pagination": {
+        "total": 75,
+        "returned": 75,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://api.ashbyhq.com/posting-api/job-board/ashby?includeCompensation=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-ashby/428821b169194d7b9a2c1b81d1c2aef8.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/ashby-ashby.json",
+      "error": null
+    },
+    "ashby-openai": {
+      "platform": "ashby",
+      "tenant": "openai",
+      "employer": "OpenAI",
+      "status": "success",
+      "jobs_discovered": 831,
+      "jobs_processed": 831,
+      "jobs_inserted": 1,
+      "jobs_updated": 830,
+      "pagination": {
+        "total": 831,
+        "returned": 831,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://api.ashbyhq.com/posting-api/job-board/openai?includeCompensation=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-openai/87f160e4480a447d972826f450f7340c.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/ashby-openai.json",
+      "error": null
+    },
+    "workable-huggingface": {
+      "platform": "workable",
+      "tenant": "huggingface",
+      "employer": "Hugging Face",
+      "status": "success",
+      "jobs_discovered": 6,
+      "jobs_processed": 6,
+      "jobs_inserted": 0,
+      "jobs_updated": 6,
+      "pagination": {
+        "total": 6,
+        "returned": 6,
+        "duplicate_postings": 0,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://apply.workable.com/api/v1/widget/accounts/huggingface?details=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-huggingface/1a8e2fde4bf447f08db61aa9876eb3e9.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workable-huggingface.json",
+      "error": null
+    },
+    "workable-runware": {
+      "platform": "workable",
+      "tenant": "runware",
+      "employer": "Runware",
+      "status": "success",
+      "jobs_discovered": 24,
+      "jobs_processed": 24,
+      "jobs_inserted": 0,
+      "jobs_updated": 24,
+      "pagination": {
+        "total": 55,
+        "returned": 24,
+        "duplicate_postings": 31,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://apply.workable.com/api/v1/widget/accounts/runware?details=true"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-runware/a03ef1dbb7e945f6ad7eb760c0aaa9d9.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workable-runware.json",
+      "error": null
+    },
+    "smartrecruiters-canva": {
+      "platform": "smartrecruiters",
+      "tenant": "Canva",
+      "employer": "Canva",
+      "status": "success",
+      "jobs_discovered": 36,
+      "jobs_processed": 36,
+      "jobs_inserted": 0,
+      "jobs_updated": 36,
+      "pagination": {
+        "page_size": 100,
+        "pages": 1,
+        "returned": 36,
+        "total": 36,
+        "detail_requests": 36,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings?limit=100&offset=0",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001556784",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001555860",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001554836",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001554834",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001554832",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001554828",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001554825",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001551586",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001542169",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001542144",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001541552",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001534768",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001522401",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001518828",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001514536",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001511525",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001510205",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001510200",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001510195",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001508808",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001489280",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001488854",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001488851",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001488524",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001486384",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001484757",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001470787",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001468836",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001404825",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001395091",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001379881",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001379035",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001378909",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001375089",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001331173",
+        "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001232280"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-canva/82baba29fc244eac94b94648cec7fbe5.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/smartrecruiters-canva.json",
+      "error": null
+    },
+    "smartrecruiters-innergy": {
+      "platform": "smartrecruiters",
+      "tenant": "innergy1",
+      "employer": "INNERGY",
+      "status": "success",
+      "jobs_discovered": 7,
+      "jobs_processed": 7,
+      "jobs_inserted": 0,
+      "jobs_updated": 7,
+      "pagination": {
+        "page_size": 100,
+        "pages": 1,
+        "returned": 7,
+        "total": 7,
+        "detail_requests": 7,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings?limit=100&offset=0",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990016476966",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990016447826",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990016104406",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990015900526",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990011376714",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990011377386",
+        "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990011377346"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-innergy/a3ed23b3342545949c3459e7d614b951.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/smartrecruiters-innergy.json",
       "error": null
     }
   }

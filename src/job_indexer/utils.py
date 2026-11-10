@@ -21,6 +21,24 @@ def non_empty_str(value: Any) -> str | None:
     return None
 
 
+def normalize_employment_type(value: Any) -> str | None:
+    text = non_empty_str(value)
+    if text is None:
+        return None
+    key = text.lower().replace("_", "").replace("-", "").replace(" ", "")
+    known = {
+        "fulltime": "Full-time",
+        "parttime": "Part-time",
+        "contract": "Contract",
+        "contractor": "Contract",
+        "intern": "Intern",
+        "internship": "Intern",
+        "temporary": "Temporary",
+        "permanent": "Permanent",
+    }
+    return known.get(key, text)
+
+
 def normalize_remote_status(explicit: Any, location: Any) -> str:
     explicit_text = non_empty_str(explicit)
     if explicit_text:
