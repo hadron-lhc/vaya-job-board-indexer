@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "name": "greenhouse-stripe",
+      "platform": "greenhouse",
+      "tenant": "stripe",
+      "company": "Stripe",
+      "options": {}
+    },
+    {
+      "name": "greenhouse-airbnb",
+      "platform": "greenhouse",
+      "tenant": "airbnb",
+      "company": "Airbnb",
+      "options": {}
+    },
+    {
+      "name": "lever-palantir",
+      "platform": "lever",
+      "tenant": "palantir",
+      "company": "Palantir",
+      "options": {
+        "api_host": "api.lever.co",
+        "page_size": 100
+      }
+    },
+    {
+      "name": "lever-spotify",
+      "platform": "lever",
+      "tenant": "spotify",
+      "company": "Spotify",
+      "options": {
+        "api_host": "api.lever.co",
+        "page_size": 100
+      }
+    }
+  ]
+}

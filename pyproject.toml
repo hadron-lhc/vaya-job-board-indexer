@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaya-job-board-indexer"
+version = "0.1.0"
+description = "Minimal multi-tenant job board indexer vertical slice"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27,<1.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0,<9.0",
+]
+
+[project.scripts]
+job-indexer = "job_indexer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-m 'not live'"
+markers = [
+  "live: tests that call real external job board APIs",
+]
