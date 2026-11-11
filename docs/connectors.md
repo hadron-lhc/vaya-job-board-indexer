@@ -1,6 +1,6 @@
 # Connector Reference
 
-Implemented platforms: 11. Each platform has two live-verified source instances unless noted.
+Implemented platforms: 15. Each platform has two live-verified source instances unless noted.
 
 ## Shared behavior
 
@@ -141,6 +141,58 @@ Implemented platforms: 11. Each platform has two live-verified source instances 
 - Remote status: `jobPostingInfo.remoteType`, falling back to location.
 - Tenants: `salesforce.wd12/External_Career_Site`, `adobe.wd5/external_experienced`.
 - Limitation: undocumented CXS API; N+1 detail requests; live configuration caps each board at 5 jobs, producing `PARTIAL_SUCCESS`.
+
+## Breezy HR
+
+- List endpoint: `https://{tenant}.breezy.hr/json`
+- Detail endpoint: the `url` field on each listing (HTML with JSON-LD `JobPosting`).
+- Pagination: none; `max_jobs` caps the fetch (default 50).
+- Required fields: `friendly_id` or `id`, `name`, `url`.
+- Application URL: listing `url`.
+- Description, salary, employment type, and posting date: JSON-LD detail when present.
+- Location: formatted `locations` names, falling back to `location`.
+- Remote status: JSON-LD first, then `remote_details`/`is_remote`.
+- Tenants: `breezy-hr`, `prep-academy-tutors`.
+- Limitation: N+1 detail requests; the large board is capped at 20 jobs and returns `PARTIAL_SUCCESS`.
+
+## BambooHR
+
+- List endpoint: `https://{tenant}.bamboohr.com/careers/list`
+- Detail endpoint: `https://{tenant}.bamboohr.com/careers/{id}/detail`
+- Pagination: none; `max_jobs` caps the fetch (default 100).
+- Required fields: `id`, `jobOpeningName`.
+- Application URL: `jobOpeningShareUrl`, falling back to the public careers URL.
+- Description, compensation, and posting date: detail `jobOpening`.
+- Location: structured `location` or `atsLocation` components.
+- Remote status: `isRemote` on the list or detail payload.
+- Tenants: `flyio`, `acme`.
+- Limitation: N+1 detail requests; detail failures produce a partial batch.
+
+## JazzHR
+
+- List endpoint: `https://{tenant}.applytojob.com/apply/jobs` (HTML).
+- Detail endpoint: `/apply/jobs/details/{id}` (HTML with JSON-LD `JobPosting`).
+- Pagination: none; `max_jobs` caps the fetch (default 100).
+- Required fields: job ID and title extracted from list links.
+- Application URL: detail URL.
+- Description, salary, employment type, location, and posting date: JSON-LD detail.
+- Tenants: `snapsheet`, `loccitaneenprovence`.
+- Limitation: HTML list parsing is coupled to link structure; N+1 detail requests; the large board is capped at 20 jobs and returns `PARTIAL_SUCCESS`.
+
+## Niceboard
+
+- Endpoint: `https://{tenant}.niceboard.co/api/jobs`
+- Query parameters: `company=all`, JSON-stringified empty arrays for filters, `sortby=newest`, `limit`, and `page`. Omitting the full parameter set returns a validation error.
+- Pagination: page/limit, configurable `page_size` from 1 to 100; `max_jobs` caps the fetch (default 100).
+- Required fields: `id`, `title`.
+- Source URL: constructed from tenant, job ID, slug, and company slug.
+- Application URL: `apply_url`, falling back to `mailto:apply_email` or the source URL.
+- Description: `description_html`.
+- Location: structured `location` fields.
+- Salary: `salary_min`, `salary_max`, `salary_currency`, `salary_timeframe`.
+- Remote status: `is_remote` or `remote_only`.
+- Tenants: `afa`, `linkinbio`.
+- Limitation: query contract is undocumented and must be maintained against API changes.
 
 ## Registry
 

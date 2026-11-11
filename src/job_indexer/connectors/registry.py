@@ -2,9 +2,13 @@ from __future__ import annotations
 
 from ..http import HttpClient
 from .ashby import AshbyConnector
+from .bamboohr import BambooHRConnector
+from .breezy import BreezyConnector
 from .base import Connector
 from .greenhouse import GreenhouseConnector
+from .jazzhr import JazzHRConnector
 from .lever import LeverConnector
+from .niceboard import NiceboardConnector
 from .personio import PersonioConnector
 from .pinpoint import PinpointConnector
 from .recruitee import RecruiteeConnector
@@ -27,6 +31,10 @@ SUPPORTED_PLATFORMS = (
     "teamtailor",
     "rippling",
     "workday",
+    "breezy",
+    "bamboohr",
+    "jazzhr",
+    "niceboard",
 )
 
 
@@ -53,4 +61,12 @@ def build_connector(platform: str, http: HttpClient) -> Connector:
         return RipplingConnector(http)
     if platform == "workday":
         return WorkdayConnector(http)
+    if platform == "breezy":
+        return BreezyConnector(http)
+    if platform == "bamboohr":
+        return BambooHRConnector(http)
+    if platform == "jazzhr":
+        return JazzHRConnector(http)
+    if platform == "niceboard":
+        return NiceboardConnector(http)
     raise ValueError(f"unsupported platform: {platform!r}")

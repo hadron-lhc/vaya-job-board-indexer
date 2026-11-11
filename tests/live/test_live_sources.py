@@ -37,6 +37,14 @@ SOURCE_NAMES = [
     "rippling-realwork",
     "workday-salesforce",
     "workday-adobe",
+    "breezy-breezyhr",
+    "breezy-prep-academy",
+    "bamboohr-flyio",
+    "bamboohr-acme",
+    "jazzhr-snapsheet",
+    "jazzhr-loccitane",
+    "niceboard-afa",
+    "niceboard-linkinbio",
 ]
 
 
@@ -47,15 +55,15 @@ def test_live_source_returns_normalizable_jobs(source_name: str) -> None:
 
     with HttpClient() as http:
         connector = build_connector(source.platform, http)
-        if source.platform == "workday":
-            with pytest.raises(PartialFetchError) as exc_info:
-                connector.fetch(source)
-            batch = exc_info.value.batch
-            assert batch.complete is False
-            assert batch.pagination["limit_reason"] == "max_jobs_reached"
-        else:
+        try:
             batch = connector.fetch(source)
             assert batch.complete is True
+        except PartialFetchError as exc:
+            if "max_jobs" not in source.options:
+                raise
+            batch = exc.batch
+            assert batch.complete is False
+            assert batch.pagination["limit_reason"] == "max_jobs_reached"
     assert len(batch.raw_jobs) > 0
 
     job = connector.normalize(batch.raw_jobs[0], source, datetime.now(timezone.utc))
@@ -73,5 +81,9 @@ def test_live_source_returns_normalizable_jobs(source_name: str) -> None:
         "teamtailor",
         "rippling",
         "workday",
+        "breezy",
+        "bamboohr",
+        "jazzhr",
+        "niceboard",
     }:
         assert job.application_url is not None

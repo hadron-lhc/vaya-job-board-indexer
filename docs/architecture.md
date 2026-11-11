@@ -1,6 +1,6 @@
 # Architecture
 
-Status: implemented 11-platform batch. This document reflects the current repository, not the original aspirational design.
+Status: implemented 15-platform batch. This document reflects the current repository, not the original aspirational design.
 
 ## 1. Goals
 
@@ -82,6 +82,8 @@ The runner owns HTTP retries, persistence, status classification, and evidence. 
 │   ├── operating_costs.md
 │   ├── known_limitations.md
 │   ├── coverage_report.md
+│   ├── coverage_checklist.md
+│   ├── requirements_compliance.md
 │   ├── EXECUTION_LOG.md
 │   ├── final_report.md
 │   └── phase2_report.md, phase3_report.md
@@ -98,6 +100,7 @@ The runner owns HTTP retries, persistence, status classification, and evidence. 
 │   ├── http.py
 │   ├── models.py
 │   ├── runner.py
+│   ├── scheduler.py
 │   ├── utils.py
 │   └── connectors/
 │       ├── base.py
@@ -112,7 +115,12 @@ The runner owns HTTP retries, persistence, status classification, and evidence. 
 │       ├── personio.py
 │       ├── teamtailor.py
 │       ├── rippling.py
-│       └── workday.py
+│       ├── workday.py
+│       ├── breezy.py
+│       ├── bamboohr.py
+│       ├── jazzhr.py
+│       ├── niceboard.py
+│       └── jsonld.py
 ├── tests/
 │   ├── fixtures/
 │   ├── live/
@@ -276,6 +284,8 @@ The API is read-only. It has no application-level authentication or TLS. Deploy 
 - Raw payloads are saved under `artifacts/raw/{source_instance}/{run_id}.json`.
 - Live checks write `artifacts/live_runs/{source_instance}.json` and a merged `summary.json`.
 - `coverage` reports matrix status counts and database job counts.
+- `coverage-checklist` writes a 78-platform checklist with per-platform evidence paths.
+- `schedule` runs the same fetch cycle at a fixed interval.
 
 ## 14. Failure handling
 
@@ -290,7 +300,7 @@ The API is read-only. It has no application-level authentication or TLS. Deploy 
 
 The current design is deliberately single-process and SQLite-backed. For larger scale:
 
-- Add a scheduler/worker with per-source locks.
+- Add per-source locks and alerting around the built-in scheduler.
 - Move to PostgreSQL for concurrent writes.
 - Add rate limiting and bounded concurrency for N+1 detail fetches.
 - Add a real ASGI API server and authentication.

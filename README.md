@@ -2,7 +2,7 @@
 
 Multi-tenant job board indexer with lifecycle tracking, conservative deduplication, FTS search, a read-only JSON API, and a minimal HTML UI.
 
-Current coverage: **11 ATS platforms**, each live-tested with two employer tenants. Coverage is 11 of 78 challenge platforms (14.1%). See `docs/coverage_report.md` for the honest coverage breakdown.
+Current coverage: **15 platforms** (14 ATS and 1 job board), each live-tested with two employer tenants. Coverage is 15 of 78 challenge platforms (19.2%). See `docs/coverage_report.md` and `docs/coverage_checklist.md` for the honest coverage breakdown.
 
 Implemented platforms:
 
@@ -17,6 +17,10 @@ Implemented platforms:
 - Teamtailor
 - Rippling
 - Workday
+- Breezy HR
+- BambooHR
+- JazzHR
+- Niceboard
 
 ## Requirements
 
@@ -59,6 +63,16 @@ Fetch all configured sources:
 
 Exit codes: `0` all success, `2` partial success, `1` hard failure or configuration error.
 
+Run the built-in scheduler:
+
+```bash
+.venv/bin/python -m job_indexer schedule \
+  --config config/sources.json \
+  --interval-minutes 60
+```
+
+The scheduler runs until interrupted. Use `--max-runs` for smoke tests and `--no-immediate` to wait one interval before the first cycle.
+
 Start the API and UI:
 
 ```bash
@@ -69,6 +83,7 @@ Other commands:
 
 ```bash
 .venv/bin/python -m job_indexer coverage --db data/jobs.db
+.venv/bin/python -m job_indexer coverage-checklist --db data/jobs.db
 .venv/bin/python -m job_indexer rebuild-dedup --db data/jobs.db
 ```
 
@@ -140,6 +155,10 @@ Platform options:
 - SmartRecruiters: optional `options.page_size` from 1 to 100.
 - Rippling: optional `options.page_size` from 1 to 1000, optional `options.max_pages`.
 - Workday: required `options.host`, required `options.site`, optional `options.max_jobs` (default 500).
+- Breezy HR: optional `options.max_jobs` (default 50).
+- BambooHR: optional `options.max_jobs` (default 100).
+- JazzHR: optional `options.max_jobs` (default 100).
+- Niceboard: optional `options.page_size` from 1 to 100, optional `options.max_jobs` (default 100).
 
 ## Behavior
 
@@ -152,7 +171,7 @@ Platform options:
 ## Current limitations
 
 - Workday uses an undocumented CXS API and is capped at 5 jobs per board in the live configuration. Those fetches are `PARTIAL_SUCCESS` and do not drive closure.
-- Rippling, Workday, and SmartRecruiters require one detail request per posting.
+- Rippling, Workday, SmartRecruiters, BambooHR, Breezy HR, and JazzHR require one detail request per posting.
 - Teamtailor RSS may cap around 100 items; truncation is not detected.
 - Recruitee documents an auth-token requirement starting 2027-02-10.
 - Personio may omit direct apply URLs and descriptions.
@@ -171,6 +190,8 @@ See `docs/known_limitations.md` for the full list.
 - `docs/operating_costs.md`: cost and request-volume estimates.
 - `docs/known_limitations.md`: coverage, data, API, and operational limitations.
 - `docs/coverage_report.md`: coverage status and evidence.
+- `docs/coverage_checklist.md`: generated 78-platform checklist with evidence paths.
+- `docs/requirements_compliance.md`: Vaya completion-criteria audit and gaps.
 - `docs/EXECUTION_LOG.md`: phase-by-phase execution history and defects fixed.
 - `docs/final_report.md`: final handoff report.
 - `docs/phase2_report.md` and `docs/phase3_report.md`: historical phase reports.

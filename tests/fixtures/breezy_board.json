@@ -1,0 +1,44 @@
+[
+  {
+    "id": "abc123",
+    "friendly_id": "abc123-data-engineer",
+    "name": "Data Engineer",
+    "url": "https://acme.breezy.hr/p/abc123-data-engineer",
+    "published_date": "2026-11-01T10:00:00.000Z",
+    "type": {"id": "full-time", "name": "Full-Time"},
+    "location": {
+      "name": "Remote",
+      "is_remote": true,
+      "remote_details": {"value": "remote", "label": "Remote"}
+    },
+    "locations": [
+      {
+        "name": "Remote",
+        "is_remote": true,
+        "remote_details": {"value": "remote", "label": "Remote"}
+      }
+    ],
+    "department": "Engineering",
+    "salary": "",
+    "company": {"name": "Acme", "friendly_id": "acme"}
+  },
+  {
+    "id": "def456",
+    "friendly_id": "def456-office-manager",
+    "name": "Office Manager",
+    "url": "https://acme.breezy.hr/p/def456-office-manager",
+    "published_date": "2026-10-20T10:00:00.000Z",
+    "type": {"id": "part-time", "name": "Part-Time"},
+    "location": {
+      "name": "Austin, TX",
+      "is_remote": false,
+      "remote_details": null
+    },
+    "locations": [
+      {"name": "Austin, TX", "is_remote": false}
+    ],
+    "department": "Operations",
+    "salary": "$25 / hour",
+    "company": {"name": "Acme", "friendly_id": "acme"}
+  }
+]

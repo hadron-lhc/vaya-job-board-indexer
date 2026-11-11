@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "id": 2583310,
+      "uid": "abc123",
+      "title": "Assistant Director",
+      "slug": "assistant-director",
+      "description_html": "<p>Lead student programs.</p>",
+      "is_remote": false,
+      "remote_only": false,
+      "apply_url": "https://example.com/apply/2583310",
+      "apply_email": null,
+      "published_at": "2026-10-27T18:53:12.188Z",
+      "location": {"city_long": "Selinsgrove", "state_long": "Pennsylvania", "country_long": "United States"},
+      "company_name": "Susquehanna University",
+      "company_slug": "susquehanna-university",
+      "jobtype": {"name": "Full time"},
+      "salary_min": 60000,
+      "salary_max": 70000,
+      "salary_currency": "USD",
+      "salary_timeframe": "year"
+    }
+  ],
+  "count": 2
+}

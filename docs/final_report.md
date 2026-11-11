@@ -1,23 +1,25 @@
 # Vaya Job Board Indexer: Final Report
 
-Date: 2026-11-10
+Date: 2026-11-11
 
 ## Executive summary
 
 This repository implements a multi-tenant job board indexer with:
 
-- 11 ATS connectors, each live-tested against two real employer tenants.
-- 22 configured source instances.
+- 15 connectors (14 ATS and 1 job board), each live-tested against two real employer tenants.
+- 30 configured source instances.
 - Normalized job listings with source and application URLs.
 - SQLite persistence with idempotent upserts.
 - Conservative lifecycle tracking, change history, and closure detection.
 - Conservative cross-source deduplication into canonical jobs.
 - FTS5 search, a read-only JSON API, and a minimal HTML UI.
+- A built-in interval scheduler plus cron/systemd deployment options.
+- A generated 78-platform coverage checklist with evidence paths.
 - Fixture tests, live tests, raw evidence, and handoff documentation.
 
-The implemented platforms are Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Pinpoint, Personio, Teamtailor, Rippling, and Workday.
+The implemented platforms are Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Pinpoint, Personio, Teamtailor, Rippling, Workday, Breezy HR, BambooHR, JazzHR, and Niceboard.
 
-Coverage is 11 of 78 platforms (14.1%). This is a tested vertical slice, not a claim of full challenge coverage. The remaining 60 researched platforms, 6 access-blocked platforms, and 1 not-researched platform are documented in `docs/platform_matrix.csv`.
+Coverage is 15 of 78 platforms (19.2%). This is a tested vertical slice, not a claim of full challenge coverage. The remaining 56 researched platforms, 6 access-blocked platforms, and 1 not-researched platform are documented in `docs/platform_matrix.csv`.
 
 ## What was delivered
 
@@ -74,9 +76,9 @@ The API is read-only and unauthenticated. Deploy behind a TLS reverse proxy with
 
 ### Operations
 
-- CLI: `fetch`, `fetch-all`, `list-sources`, `coverage`, `rebuild-dedup`, `serve`.
+- CLI: `fetch`, `fetch-all`, `list-sources`, `coverage`, `coverage-checklist`, `schedule`, `rebuild-dedup`, `serve`.
 - Live evidence: `scripts/live_check.py`.
-- Scheduling: cron or systemd timers.
+- Scheduling: built-in `schedule` command, or cron/systemd timers.
 - Deployment guidance: `docs/deployment.md`.
 - Cost estimates: `docs/operating_costs.md`.
 
@@ -85,7 +87,7 @@ The API is read-only and unauthenticated. Deploy behind a TLS reverse proxy with
 Deterministic suite:
 
 ```text
-110 passed, 22 deselected
+141 passed, 30 deselected
 ```
 
 Command:
@@ -97,7 +99,7 @@ Command:
 Full live suite:
 
 ```text
-22 passed
+30 passed
 ```
 
 Command:
@@ -118,20 +120,21 @@ Latest evidence summary: `artifacts/live_runs/summary.json`.
 
 | Status | Count |
 | --- | ---: |
-| `LIVE_TESTED_MULTI_TENANT` | 11 |
-| `RESEARCHED` | 60 |
+| `LIVE_TESTED_MULTI_TENANT` | 15 |
+| `RESEARCHED` | 56 |
 | `ACCESS_BLOCKED` | 6 |
 | `NOT_RESEARCHED` | 1 |
 | Total | 78 |
 
-Implemented: 11 ATS platforms, 0 job boards.
+Implemented: 14 ATS platforms and 1 job board.
 
 Detailed coverage: `docs/coverage_report.md`.
 
 ## Key limitations
 
 - Workday uses an undocumented API and is capped at 5 jobs per board in the live configuration. Its fetches are `PARTIAL_SUCCESS`.
-- Rippling, Workday, and SmartRecruiters use N+1 detail requests.
+- Breezy HR and JazzHR large-board live checks are capped at 20 jobs and return `PARTIAL_SUCCESS`.
+- Rippling, Workday, SmartRecruiters, BambooHR, Breezy HR, and JazzHR use N+1 detail requests.
 - Teamtailor RSS may be truncated and truncation is not detected.
 - Recruitee has a documented auth-token requirement starting 2027-02-10.
 - Personio may omit direct apply URLs and descriptions.
@@ -156,10 +159,10 @@ Details: `docs/EXECUTION_LOG.md`.
 
 ## Recommended next steps
 
-1. Implement additional verified public feeds from the 60 `RESEARCHED` rows.
+1. Implement additional verified public feeds from the 56 `RESEARCHED` rows.
 2. Add rate limiting and bounded concurrency for detail-heavy connectors.
 3. Raise Workday coverage after adding request budgets and concurrency controls.
-4. Add scheduler/worker execution and monitoring.
+4. Add scheduler monitoring and alerting around the built-in interval loop.
 5. Add API authentication and TLS termination for non-local deployment.
 6. Resolve or document the 6 `ACCESS_BLOCKED` platforms.
 7. Add more tenant coverage for existing platforms.
@@ -167,8 +170,8 @@ Details: `docs/EXECUTION_LOG.md`.
 
 ## Repository map
 
-- `config/sources.json`: 22 configured sources.
-- `src/job_indexer/connectors/`: 11 connector modules plus registry.
+- `config/sources.json`: 30 configured sources.
+- `src/job_indexer/connectors/`: 15 connector modules plus registry.
 - `src/job_indexer/db.py`: schema, migration, lifecycle, deduplication, search.
 - `src/job_indexer/runner.py`: fetch orchestration and status classification.
 - `src/job_indexer/api.py`: HTTP API and HTML UI.
@@ -176,8 +179,8 @@ Details: `docs/EXECUTION_LOG.md`.
 - `src/job_indexer/cli.py`: command-line interface.
 - `tests/`: deterministic and live tests.
 - `artifacts/live_runs/`: live evidence.
-- `docs/`: research, architecture, connector reference, deployment, costs, limitations, coverage, execution log.
+- `docs/`: research, architecture, connector reference, deployment, costs, limitations, coverage, generated checklist, requirements audit, execution log.
 
 ## Status
 
-The implementation is complete for the 11-platform batch and verified by deterministic tests, live connector tests, and live evidence. Changes remain uncommitted unless explicitly requested.
+The implementation is complete for the 15-platform batch and verified by deterministic tests, live connector tests, and live evidence. Changes remain uncommitted unless explicitly requested.

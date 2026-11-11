@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-11T01:00:50.120588+00:00",
+  "checked_at": "2026-11-11T03:25:18.890262+00:00",
   "config": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/config/sources.json",
   "sources": {
     "greenhouse-stripe": {
@@ -563,6 +563,241 @@
       "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workday-adobe/3b43c318be734343b4eda8199d30b966.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workday-adobe.json",
       "error": "Workday fetch truncated: max_jobs_reached"
+    },
+    "breezy-breezyhr": {
+      "platform": "breezy",
+      "tenant": "breezy-hr",
+      "employer": "Breezy HR Demo",
+      "status": "SUCCESS",
+      "jobs_discovered": 2,
+      "jobs_processed": 2,
+      "jobs_inserted": 2,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 2,
+        "returned": 2,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://breezy-hr.breezy.hr/json",
+        "https://breezy-hr.breezy.hr/p/fe15856f4460-1-demo-testing-position-clone-12-18-2014",
+        "https://breezy-hr.breezy.hr/p/7d9febf89180-sift-walrmart-caroline-cdla-driver"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/breezy-breezyhr/4df8ec1c4f634717bb7e3028a52fe974.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/breezy-breezyhr.json",
+      "error": null
+    },
+    "breezy-prep-academy": {
+      "platform": "breezy",
+      "tenant": "prep-academy-tutors",
+      "employer": "Prep Academy Tutors",
+      "status": "PARTIAL_SUCCESS",
+      "jobs_discovered": 20,
+      "jobs_processed": 20,
+      "jobs_inserted": 20,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 323,
+        "returned": 20,
+        "detail_failures": 0,
+        "complete": false,
+        "limit_reason": "max_jobs_reached"
+      },
+      "request_urls": [
+        "https://prep-academy-tutors.breezy.hr/json",
+        "https://prep-academy-tutors.breezy.hr/p/54defb8bf6e2-act-prep-tutor-one-on-one-in-home",
+        "https://prep-academy-tutors.breezy.hr/p/337920ae194c-ap-biology-tutor-in-person-and-in-home",
+        "https://prep-academy-tutors.breezy.hr/p/163bfef98153-ap-chemistry-tutor-in-person-and-in-home",
+        "https://prep-academy-tutors.breezy.hr/p/f6bf7a91ea95-academic-coach",
+        "https://prep-academy-tutors.breezy.hr/p/74b60247e4b9-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/0074580700a4-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/ff50ed693721-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/59036df919aa-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/f14caaaaf91a-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/09842273e9bc-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/38b9d363a313-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/b3cdc3fb81b4-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/7046c7a45510-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/038929748cf4-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/7fccf00745af-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/69711bf1dddf-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/b21b53776cd1-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/84ba7fcd5477-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/cb7374f9e28a-academic-tutor",
+        "https://prep-academy-tutors.breezy.hr/p/050d8ed3c258-academic-tutor"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/breezy-prep-academy/6afc903c582043fdaccf3244053a9dce.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/breezy-prep-academy.json",
+      "error": "Breezy fetch incomplete: max_jobs_reached"
+    },
+    "bamboohr-flyio": {
+      "platform": "bamboohr",
+      "tenant": "flyio",
+      "employer": "Fly.io",
+      "status": "SUCCESS",
+      "jobs_discovered": 10,
+      "jobs_processed": 10,
+      "jobs_inserted": 10,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 10,
+        "returned": 10,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://flyio.bamboohr.com/careers/list",
+        "https://flyio.bamboohr.com/careers/35/detail",
+        "https://flyio.bamboohr.com/careers/36/detail",
+        "https://flyio.bamboohr.com/careers/37/detail",
+        "https://flyio.bamboohr.com/careers/38/detail",
+        "https://flyio.bamboohr.com/careers/53/detail",
+        "https://flyio.bamboohr.com/careers/60/detail",
+        "https://flyio.bamboohr.com/careers/61/detail",
+        "https://flyio.bamboohr.com/careers/62/detail",
+        "https://flyio.bamboohr.com/careers/63/detail",
+        "https://flyio.bamboohr.com/careers/64/detail"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/bamboohr-flyio/8cec182b4a3848e7a5cc85b78a2708a1.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/bamboohr-flyio.json",
+      "error": null
+    },
+    "bamboohr-acme": {
+      "platform": "bamboohr",
+      "tenant": "acme",
+      "employer": "ACME",
+      "status": "SUCCESS",
+      "jobs_discovered": 4,
+      "jobs_processed": 4,
+      "jobs_inserted": 4,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 4,
+        "returned": 4,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://acme.bamboohr.com/careers/list",
+        "https://acme.bamboohr.com/careers/15/detail",
+        "https://acme.bamboohr.com/careers/20/detail",
+        "https://acme.bamboohr.com/careers/21/detail",
+        "https://acme.bamboohr.com/careers/22/detail"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/bamboohr-acme/fba1856be49449bf90d5cbb3841590ca.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/bamboohr-acme.json",
+      "error": null
+    },
+    "jazzhr-snapsheet": {
+      "platform": "jazzhr",
+      "tenant": "snapsheet",
+      "employer": "Snapsheet",
+      "status": "SUCCESS",
+      "jobs_discovered": 3,
+      "jobs_processed": 3,
+      "jobs_inserted": 3,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 3,
+        "returned": 3,
+        "detail_failures": 0,
+        "complete": true
+      },
+      "request_urls": [
+        "https://snapsheet.applytojob.com/apply/jobs",
+        "https://snapsheet.applytojob.com/apply/jobs/details/7dY1TUAJrl",
+        "https://snapsheet.applytojob.com/apply/jobs/details/zbmXAVAZXm",
+        "https://snapsheet.applytojob.com/apply/jobs/details/LmgHbQP8Yq"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/jazzhr-snapsheet/62e42e0e91174f218a43051d49290336.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/jazzhr-snapsheet.json",
+      "error": null
+    },
+    "jazzhr-loccitane": {
+      "platform": "jazzhr",
+      "tenant": "loccitaneenprovence",
+      "employer": "L'Occitane en Provence",
+      "status": "PARTIAL_SUCCESS",
+      "jobs_discovered": 20,
+      "jobs_processed": 20,
+      "jobs_inserted": 20,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 181,
+        "returned": 20,
+        "detail_failures": 0,
+        "complete": false,
+        "limit_reason": "max_jobs_reached"
+      },
+      "request_urls": [
+        "https://loccitaneenprovence.applytojob.com/apply/jobs",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/kHY1IBbup6",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/DTVt3Psz5v",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/MwjkXDumdw",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/z7Z0oKf9q5",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/PjZ4vIEn2W",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/IhdBraFnx9",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/Bfb9bNUjrC",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/Sadd7ZsuOg",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/MCQRtPLa96",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/RaZzsNuVTe",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/SGRc2AIMNt",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/nVKxV7bwK8",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/vs8dYvMdEW",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/KJCfRPQZEM",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/JwfMQRWVsu",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/TmJuIVvLRa",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/0I5yodEV52",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/frkkxGkRR5",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/VK86AqUfbh",
+        "https://loccitaneenprovence.applytojob.com/apply/jobs/details/nQah4mPBZA"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/jazzhr-loccitane/393f3ad25158476593d096fd567cc993.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/jazzhr-loccitane.json",
+      "error": "JazzHR fetch incomplete: max_jobs_reached"
+    },
+    "niceboard-afa": {
+      "platform": "niceboard",
+      "tenant": "afa",
+      "employer": "AFA Career Center",
+      "status": "SUCCESS",
+      "jobs_discovered": 15,
+      "jobs_processed": 15,
+      "jobs_inserted": 15,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 15,
+        "returned": 15,
+        "complete": true
+      },
+      "request_urls": [
+        "https://afa.niceboard.co/api/jobs?company=all&jobtype=%5B%5D&category=%5B%5D&secondary_category=%5B%5D&tags=%5B%5D&city=%5B%5D&state=%5B%5D&country=%5B%5D&custom_fields=%7B%7D&remote_ok=false&remote_only=false&salary_timeframe=&salary_min=&salary_max=&keyword=&limit=100&page=1&sortby=newest"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/niceboard-afa/3ee0685e39994ba59a56207cbdbe5599.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/niceboard-afa.json",
+      "error": null
+    },
+    "niceboard-linkinbio": {
+      "platform": "niceboard",
+      "tenant": "linkinbio",
+      "employer": "Link in Bio",
+      "status": "SUCCESS",
+      "jobs_discovered": 59,
+      "jobs_processed": 59,
+      "jobs_inserted": 59,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 59,
+        "returned": 59,
+        "complete": true
+      },
+      "request_urls": [
+        "https://linkinbio.niceboard.co/api/jobs?company=all&jobtype=%5B%5D&category=%5B%5D&secondary_category=%5B%5D&tags=%5B%5D&city=%5B%5D&state=%5B%5D&country=%5B%5D&custom_fields=%7B%7D&remote_ok=false&remote_only=false&salary_timeframe=&salary_min=&salary_max=&keyword=&limit=100&page=1&sortby=newest"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/niceboard-linkinbio/c96226458d1441e8a751242e40a2146e.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/niceboard-linkinbio.json",
+      "error": null
     }
   }
 }

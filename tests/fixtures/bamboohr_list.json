@@ -1,0 +1,27 @@
+{
+  "meta": {"totalCount": 2},
+  "result": [
+    {
+      "id": "35",
+      "jobOpeningName": "Infrastructure Ops Engineer",
+      "departmentLabel": "Infrastructure Operations",
+      "employmentStatusLabel": "US Employee",
+      "employmentType": null,
+      "location": {"city": null, "state": null},
+      "atsLocation": {"country": null, "state": null, "province": null, "city": null},
+      "isRemote": null,
+      "locationType": "1"
+    },
+    {
+      "id": "36",
+      "jobOpeningName": "Developer Relations Engineer",
+      "departmentLabel": "Engineering",
+      "employmentStatusLabel": "Full-Time",
+      "employmentType": "Full-Time",
+      "location": {"city": "Austin", "state": "Texas"},
+      "atsLocation": {"country": "United States", "state": "Texas", "province": null, "city": "Austin"},
+      "isRemote": null,
+      "locationType": "0"
+    }
+  ]
+}

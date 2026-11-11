@@ -2,8 +2,8 @@
 
 ## Coverage
 
-- 11 of 78 platforms are implemented and live-tested with two tenants each.
-- 60 platforms remain `RESEARCHED`.
+- 15 of 78 platforms are implemented and live-tested with two tenants each.
+- 56 platforms remain `RESEARCHED`.
 - 6 platforms are `ACCESS_BLOCKED`.
 - 1 platform remains `NOT_RESEARCHED`.
 - The matrix is the source of truth: `docs/platform_matrix.csv`.
@@ -21,6 +21,10 @@
 - Teamtailor RSS may cap around 100 items and feed truncation is not detected.
 - Rippling requires one detail request per posting. The `rippling` tenant has 410 jobs and is not configured to avoid an unbounded live fetch.
 - Workday uses an undocumented CXS API. The live configuration caps each board at 5 jobs, so fetches are `PARTIAL_SUCCESS` and do not drive closure.
+- BambooHR uses an undocumented public JSON endpoint and requires one detail request per posting.
+- Breezy HR uses an undocumented JSON list and a JSON-LD detail request per posting. The large live board is capped at 20 jobs.
+- JazzHR parses an HTML list and fetches a JSON-LD detail page per posting. The large live board is capped at 20 jobs.
+- Niceboard requires a full undocumented filter query parameter set; omitting it returns a validation error.
 
 ## Lifecycle and deduplication
 
@@ -42,7 +46,7 @@
 
 ## Operations
 
-- There is no built-in scheduler. Use cron or systemd timers.
+- The built-in scheduler is a single-process interval loop with no leader election or alerting. Use cron/systemd or external supervision for production.
 - There is no distributed lock. Do not run overlapping full refreshes against one SQLite database.
 - SQLite is suitable for the current scale but not for high write concurrency across many workers.
 - Raw payload retention is manual.

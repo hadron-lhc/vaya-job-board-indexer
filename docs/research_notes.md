@@ -1,6 +1,6 @@
 # Research Notes
 
-Research date: 2026-11-10
+Research date: 2026-11-10 (implementation updates through 2026-11-11)
 
 Scope: Phase 1 platform research for the Vaya Job Board Indexer challenge. This document records what was verified, how it was verified, and what remains unknown. It does not claim that any connector has been implemented.
 
@@ -30,14 +30,14 @@ Primary research inputs:
 - `RESEARCHED`: enough desk research and/or live evidence to propose an extraction path. This does not mean the endpoint, tenant, or schema is fully verified.
 - `ACCESS_BLOCKED`: live access failed with 403, DNS failure, or another blocking condition, and no verified workaround exists.
 - `NOT_RESEARCHED`: product identity or public job surface is still unverified.
-- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. The implemented batch uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Pinpoint, Personio, Teamtailor, Rippling, and Workday.
+- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. The implemented batch uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Pinpoint, Personio, Teamtailor, Rippling, Workday, Breezy HR, BambooHR, JazzHR, and Niceboard.
 
 Current matrix status counts:
 
 | Status | Count |
 | --- | ---: |
-| `RESEARCHED` | 60 |
-| `LIVE_TESTED_MULTI_TENANT` | 11 |
+| `RESEARCHED` | 56 |
+| `LIVE_TESTED_MULTI_TENANT` | 15 |
 | `ACCESS_BLOCKED` | 6 |
 | `NOT_RESEARCHED` | 1 |
 | Total | 78 |
@@ -46,12 +46,12 @@ Confidence counts:
 
 | Confidence | Count |
 | --- | ---: |
-| high | 11 |
-| medium | 19 |
-| low | 48 |
+| high | 15 |
+| medium | 17 |
+| low | 46 |
 | Total | 78 |
 
-The 11 high-confidence entries are public endpoint patterns that returned live data during this research: Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Personio, Teamtailor, Pinpoint, Rippling, and Workday.
+The 15 high-confidence entries are public endpoint patterns that returned live data: Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Personio, Teamtailor, Pinpoint, Rippling, Workday, Breezy HR, BambooHR, JazzHR, and Niceboard.
 
 ## 3. Extraction-method summary
 
@@ -295,7 +295,7 @@ Priority 4: resolve identity or access
 
 ## 10. Implementation outcome
 
-The implemented batch covers eleven platforms with two live-verified employer instances per platform:
+The implemented batch covers fifteen platforms with two live-verified employer instances per platform:
 
 - Greenhouse: `stripe`, `airbnb`
 - Lever: `palantir`, `spotify`
@@ -308,8 +308,12 @@ The implemented batch covers eleven platforms with two live-verified employer in
 - Teamtailor: `bankgirotab`, `doconomy`
 - Rippling: `netatwork`, `realwork`
 - Workday: `salesforce.wd12/External_Career_Site`, `adobe.wd5/external_experienced`
+- Breezy HR: `breezy-hr`, `prep-academy-tutors`
+- BambooHR: `flyio`, `acme`
+- JazzHR: `snapsheet`, `loccitaneenprovence`
+- Niceboard: `afa`, `linkinbio`
 
-Recruitee is implemented despite its documented auth-token requirement starting 2027-02-10; the deadline is recorded in the matrix. Workday and Rippling require per-posting detail requests for descriptions. Workday live configuration intentionally caps each board at five jobs, so those fetches are `PARTIAL_SUCCESS` and never drive closure.
+Recruitee is implemented despite its documented auth-token requirement starting 2027-02-10; the deadline is recorded in the matrix. BambooHR, Breezy HR, JazzHR, SmartRecruiters, Workday, and Rippling require per-posting detail requests for descriptions. Workday live configuration intentionally caps each board at five jobs, and the large Breezy HR and JazzHR boards are capped at 20 jobs; those fetches are `PARTIAL_SUCCESS` and never drive closure.
 
 See `docs/phase3_report.md` for the first connector batch and `docs/EXECUTION_LOG.md` for the full execution history.
 

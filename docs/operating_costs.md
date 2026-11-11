@@ -4,7 +4,7 @@ These are planning estimates, not vendor quotes. Actual costs depend on request 
 
 ## Current footprint
 
-- 22 configured source instances across 11 platforms.
+- 30 configured source instances across 15 platforms.
 - One Python process for fetching, one for the API/UI.
 - One SQLite database.
 - Raw payload retention under `artifacts/raw/`.
@@ -12,7 +12,7 @@ These are planning estimates, not vendor quotes. Actual costs depend on request 
 
 ## Compute
 
-A small VM or container is sufficient for the current 22 sources:
+A small VM or container is sufficient for the current 30 sources:
 
 - 1 vCPU, 1-2 GB RAM
 - 10-20 GB disk for database and artifacts
@@ -20,16 +20,16 @@ A small VM or container is sufficient for the current 22 sources:
 
 Estimated hosting cost: USD 5-20 per month on a small VPS, or near zero on existing infrastructure.
 
-Workday and Rippling are the main CPU/network consumers because they fetch one detail response per job. Workday is capped at 5 jobs per source in the current live configuration. A full Workday board can require hundreds to thousands of detail requests.
+BambooHR, Breezy HR, JazzHR, Rippling, SmartRecruiters, and Workday are the main CPU/network consumers because they fetch one detail response per job. Workday is capped at 5 jobs per source, and the large Breezy HR and JazzHR boards are capped at 20 jobs in the current live configuration. A full Workday board can require hundreds to thousands of detail requests.
 
 ## Network and request volume
 
 Assumptions:
 
 - 4 full refreshes per day.
-- 22 sources.
+- 30 sources.
 - 1-3 requests per source for simple feeds.
-- N+1 detail requests for SmartRecruiters, Rippling, and Workday.
+- N+1 detail requests for SmartRecruiters, Rippling, Workday, BambooHR, Breezy HR, and JazzHR.
 
 Current approximate daily request count:
 
@@ -37,7 +37,11 @@ Current approximate daily request count:
 - SmartRecruiters: 2 sources, about 43 detail requests plus list requests.
 - Rippling: 2 configured sources, about 22 detail requests plus list requests.
 - Workday: 2 configured sources, 10 detail requests plus list requests.
-- Total: roughly 100-200 requests per refresh, or 400-800 per day at four refreshes.
+- BambooHR: 2 configured sources, about 14 detail requests plus list requests.
+- Breezy HR: 2 configured sources, about 22 detail requests plus list requests.
+- JazzHR: 2 configured sources, about 23 detail requests plus list requests.
+- Niceboard: 2 configured sources, about 74 paginated list requests with the current caps.
+- Total: roughly 200-350 requests per refresh, or 800-1400 per day at four refreshes.
 
 At 78 sources with detail-heavy connectors enabled broadly, expect tens of thousands of requests per day. Budget for rate limiting, retries, and concurrency controls before scaling.
 
@@ -75,7 +79,7 @@ No paid observability stack is required. A cron job can query `fetch_runs` and e
 
 ## Cost drivers
 
-1. Detail-heavy connectors: SmartRecruiters, Rippling, Workday.
+1. Detail-heavy connectors: SmartRecruiters, Rippling, Workday, BambooHR, Breezy HR, JazzHR.
 2. Large boards: Ashby OpenAI, Greenhouse Stripe, Workday Salesforce.
 3. Raw payload retention.
 4. Number of refreshes per day.

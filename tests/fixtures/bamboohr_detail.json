@@ -1,0 +1,15 @@
+{
+  "meta": {},
+  "result": {
+    "jobOpening": {
+      "jobOpeningShareUrl": "https://acme.bamboohr.com/careers/35",
+      "jobOpeningName": "Infrastructure Ops Engineer",
+      "description": "<p>Run the platform.</p>",
+      "employmentType": "Full-Time",
+      "compensation": "$150,000 - $180,000",
+      "datePosted": "2026-03-14",
+      "location": {"city": "Austin", "state": "Texas", "addressCountry": "United States"},
+      "isRemote": true
+    }
+  }
+}

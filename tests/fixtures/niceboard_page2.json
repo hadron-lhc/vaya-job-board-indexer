@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "id": 2583311,
+      "uid": "def456",
+      "title": "Remote Program Manager",
+      "slug": "remote-program-manager",
+      "description_html": "<p>Coordinate remote teams.</p>",
+      "is_remote": true,
+      "remote_only": true,
+      "apply_url": null,
+      "apply_email": "jobs@example.com",
+      "published_at": "2026-10-26T18:53:12.188Z",
+      "location": null,
+      "company_name": "Example Org",
+      "company_slug": "example-org",
+      "jobtype": {"name": "Contract"},
+      "salary_min": null,
+      "salary_max": null,
+      "salary_currency": null,
+      "salary_timeframe": null
+    }
+  ],
+  "count": 2
+}

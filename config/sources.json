@@ -175,6 +175,78 @@
         "site": "external_experienced",
         "max_jobs": 5
       }
+    },
+    {
+      "name": "breezy-breezyhr",
+      "platform": "breezy",
+      "tenant": "breezy-hr",
+      "company": "Breezy HR Demo",
+      "options": {
+        "max_jobs": 2
+      }
+    },
+    {
+      "name": "breezy-prep-academy",
+      "platform": "breezy",
+      "tenant": "prep-academy-tutors",
+      "company": "Prep Academy Tutors",
+      "options": {
+        "max_jobs": 20
+      }
+    },
+    {
+      "name": "bamboohr-flyio",
+      "platform": "bamboohr",
+      "tenant": "flyio",
+      "company": "Fly.io",
+      "options": {
+        "max_jobs": 100
+      }
+    },
+    {
+      "name": "bamboohr-acme",
+      "platform": "bamboohr",
+      "tenant": "acme",
+      "company": "ACME",
+      "options": {
+        "max_jobs": 100
+      }
+    },
+    {
+      "name": "jazzhr-snapsheet",
+      "platform": "jazzhr",
+      "tenant": "snapsheet",
+      "company": "Snapsheet",
+      "options": {
+        "max_jobs": 100
+      }
+    },
+    {
+      "name": "jazzhr-loccitane",
+      "platform": "jazzhr",
+      "tenant": "loccitaneenprovence",
+      "company": "L'Occitane en Provence",
+      "options": {
+        "max_jobs": 20
+      }
+    },
+    {
+      "name": "niceboard-afa",
+      "platform": "niceboard",
+      "tenant": "afa",
+      "company": "AFA Career Center",
+      "options": {
+        "max_jobs": 100
+      }
+    },
+    {
+      "name": "niceboard-linkinbio",
+      "platform": "niceboard",
+      "tenant": "linkinbio",
+      "company": "Link in Bio",
+      "options": {
+        "max_jobs": 100
+      }
     }
   ]
 }
