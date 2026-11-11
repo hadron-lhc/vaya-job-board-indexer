@@ -1,13 +1,13 @@
 {
-  "run_id": "a03ef1dbb7e945f6ad7eb760c0aaa9d9",
+  "run_id": "ffc56d119c054086881b0047d4816595",
   "platform": "workable",
   "source_instance": "workable-runware",
   "employer": "Runware",
   "tenant": "runware",
-  "status": "success",
-  "started_at": "2026-11-10T21:48:17.367282+00:00",
-  "completed_at": "2026-11-10T21:48:17.855547+00:00",
-  "duration_ms": 488,
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:01:51.121655+00:00",
+  "completed_at": "2026-11-11T01:01:52.363376+00:00",
+  "duration_ms": 1241,
   "source_url": "https://apply.workable.com/runware",
   "request_urls": [
     "https://apply.workable.com/api/v1/widget/accounts/runware?details=true"
@@ -22,8 +22,12 @@
   "jobs_processed": 24,
   "jobs_inserted": 0,
   "jobs_updated": 24,
+  "jobs_changed": 24,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-runware/a03ef1dbb7e945f6ad7eb760c0aaa9d9.json",
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-runware/ffc56d119c054086881b0047d4816595.json",
   "fields_available": [
     "application_url",
     "company",
@@ -55,8 +59,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-11-04",
-      "first_seen_at": "2026-11-10T21:48:17.367322+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.367322+00:00"
+      "first_seen_at": "2026-11-11T01:01:51.121679+00:00",
+      "last_checked_at": "2026-11-11T01:01:51.121679+00:00"
     },
     {
       "platform": "workable",
@@ -72,8 +76,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-10-07",
-      "first_seen_at": "2026-11-10T21:48:17.367322+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.367322+00:00"
+      "first_seen_at": "2026-11-11T01:01:51.121679+00:00",
+      "last_checked_at": "2026-11-11T01:01:51.121679+00:00"
     },
     {
       "platform": "workable",
@@ -89,8 +93,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-08-11",
-      "first_seen_at": "2026-11-10T21:48:17.367322+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.367322+00:00"
+      "first_seen_at": "2026-11-11T01:01:51.121679+00:00",
+      "last_checked_at": "2026-11-11T01:01:51.121679+00:00"
     }
   ]
 }

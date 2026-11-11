@@ -134,3 +134,53 @@ def test_fetch_run_lifecycle_is_recorded(tmp_path: Path) -> None:
     assert run["jobs_updated"] == 1
     assert run["error_details"] is None
     conn.close()
+
+
+def test_init_db_migrates_legacy_tables_before_creating_indexes(tmp_path: Path) -> None:
+    conn = connect(tmp_path / "legacy.db")
+    conn.executescript(
+        """
+        CREATE TABLE job_listings (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          platform TEXT NOT NULL,
+          source_instance TEXT NOT NULL,
+          external_job_id TEXT NOT NULL,
+          title TEXT NOT NULL,
+          company TEXT NOT NULL,
+          source_url TEXT NOT NULL,
+          remote_status TEXT NOT NULL,
+          first_seen_at TEXT NOT NULL,
+          last_checked_at TEXT NOT NULL,
+          created_at TEXT NOT NULL,
+          updated_at TEXT NOT NULL,
+          UNIQUE(platform, source_instance, external_job_id)
+        );
+        CREATE TABLE fetch_runs (
+          id TEXT PRIMARY KEY,
+          source_instance TEXT NOT NULL,
+          platform TEXT NOT NULL,
+          started_at TEXT NOT NULL,
+          completed_at TEXT,
+          status TEXT NOT NULL,
+          jobs_discovered INTEGER NOT NULL DEFAULT 0,
+          jobs_processed INTEGER NOT NULL DEFAULT 0,
+          jobs_inserted INTEGER NOT NULL DEFAULT 0,
+          jobs_updated INTEGER NOT NULL DEFAULT 0,
+          error_details TEXT,
+          duration_ms INTEGER,
+          raw_payload_path TEXT,
+          pagination_json TEXT
+        );
+        """
+    )
+
+    init_db(conn)
+
+    listing_columns = {row["name"] for row in conn.execute("PRAGMA table_info(job_listings)")}
+    run_columns = {row["name"] for row in conn.execute("PRAGMA table_info(fetch_runs)")}
+    assert {"canonical_job_id", "source_status", "missing_scans", "closed_at"} <= listing_columns
+    assert {"jobs_changed", "jobs_missing", "jobs_closed", "error_class"} <= run_columns
+    indexes = {row["name"] for row in conn.execute("PRAGMA index_list(job_listings)")}
+    assert "idx_job_listings_canonical" in indexes
+    assert "idx_job_listings_status" in indexes
+    conn.close()

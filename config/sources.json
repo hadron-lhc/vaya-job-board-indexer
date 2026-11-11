@@ -79,6 +79,102 @@
       "options": {
         "page_size": 100
       }
+    },
+    {
+      "name": "recruitee-bunq",
+      "platform": "recruitee",
+      "tenant": "bunq",
+      "company": "bunq",
+      "options": {}
+    },
+    {
+      "name": "recruitee-tellent",
+      "platform": "recruitee",
+      "tenant": "jobs",
+      "company": "Tellent",
+      "options": {}
+    },
+    {
+      "name": "pinpoint-avaaz",
+      "platform": "pinpoint",
+      "tenant": "avaaz",
+      "company": "Avaaz",
+      "options": {}
+    },
+    {
+      "name": "pinpoint-workwithus",
+      "platform": "pinpoint",
+      "tenant": "workwithus",
+      "company": "Work with Us",
+      "options": {}
+    },
+    {
+      "name": "personio-lanch",
+      "platform": "personio",
+      "tenant": "lanch",
+      "company": "Lanch",
+      "options": {}
+    },
+    {
+      "name": "personio-deskbird",
+      "platform": "personio",
+      "tenant": "deskbird",
+      "company": "Deskbird",
+      "options": {}
+    },
+    {
+      "name": "teamtailor-bankgirotab",
+      "platform": "teamtailor",
+      "tenant": "bankgirotab",
+      "company": "Bankgirot",
+      "options": {}
+    },
+    {
+      "name": "teamtailor-doconomy",
+      "platform": "teamtailor",
+      "tenant": "doconomy",
+      "company": "Doconomy",
+      "options": {}
+    },
+    {
+      "name": "rippling-netatwork",
+      "platform": "rippling",
+      "tenant": "netatwork",
+      "company": "Net at Work",
+      "options": {
+        "page_size": 100
+      }
+    },
+    {
+      "name": "rippling-realwork",
+      "platform": "rippling",
+      "tenant": "realwork",
+      "company": "RealWork",
+      "options": {
+        "page_size": 100
+      }
+    },
+    {
+      "name": "workday-salesforce",
+      "platform": "workday",
+      "tenant": "salesforce",
+      "company": "Salesforce",
+      "options": {
+        "host": "salesforce.wd12.myworkdayjobs.com",
+        "site": "External_Career_Site",
+        "max_jobs": 5
+      }
+    },
+    {
+      "name": "workday-adobe",
+      "platform": "workday",
+      "tenant": "adobe",
+      "company": "Adobe",
+      "options": {
+        "host": "adobe.wd5.myworkdayjobs.com",
+        "site": "external_experienced",
+        "max_jobs": 5
+      }
     }
   ]
 }

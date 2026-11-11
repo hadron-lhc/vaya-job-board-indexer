@@ -1,25 +1,25 @@
 {
-  "checked_at": "2026-11-10T21:48:02.271274+00:00",
+  "checked_at": "2026-11-11T01:00:50.120588+00:00",
   "config": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/config/sources.json",
   "sources": {
     "greenhouse-stripe": {
       "platform": "greenhouse",
       "tenant": "stripe",
       "employer": "Stripe",
-      "status": "success",
-      "jobs_discovered": 775,
-      "jobs_processed": 775,
-      "jobs_inserted": 0,
+      "status": "SUCCESS",
+      "jobs_discovered": 778,
+      "jobs_processed": 778,
+      "jobs_inserted": 3,
       "jobs_updated": 775,
       "pagination": {
-        "total": 775,
-        "returned": 775,
+        "total": 778,
+        "returned": 778,
         "pagination_required": false
       },
       "request_urls": [
         "https://boards-api.greenhouse.io/v1/boards/stripe/jobs?content=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-stripe/8e76a1eb7f384424a0bff908f4c52aa8.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-stripe/8858248b399e4d169eeb5667dc57661f.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-stripe.json",
       "error": null
     },
@@ -27,20 +27,20 @@
       "platform": "greenhouse",
       "tenant": "airbnb",
       "employer": "Airbnb",
-      "status": "success",
-      "jobs_discovered": 203,
-      "jobs_processed": 203,
+      "status": "SUCCESS",
+      "jobs_discovered": 202,
+      "jobs_processed": 202,
       "jobs_inserted": 0,
-      "jobs_updated": 203,
+      "jobs_updated": 202,
       "pagination": {
-        "total": 203,
-        "returned": 203,
+        "total": 202,
+        "returned": 202,
         "pagination_required": false
       },
       "request_urls": [
         "https://boards-api.greenhouse.io/v1/boards/airbnb/jobs?content=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-airbnb/25d51c52329a4261896d30139d5102ca.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/greenhouse-airbnb/59591cc205714bac90af915f18ec0191.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/greenhouse-airbnb.json",
       "error": null
     },
@@ -48,7 +48,7 @@
       "platform": "lever",
       "tenant": "palantir",
       "employer": "Palantir",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 304,
       "jobs_processed": 304,
       "jobs_inserted": 0,
@@ -65,7 +65,7 @@
         "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=200",
         "https://api.lever.co/v0/postings/palantir?mode=json&limit=100&skip=300"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-palantir/11d4e827888541639568ec57c52bbd0c.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-palantir/c2c685e83d584401a4aca88809baa078.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-palantir.json",
       "error": null
     },
@@ -73,11 +73,11 @@
       "platform": "lever",
       "tenant": "spotify",
       "employer": "Spotify",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 86,
       "jobs_processed": 86,
-      "jobs_inserted": 0,
-      "jobs_updated": 86,
+      "jobs_inserted": 1,
+      "jobs_updated": 85,
       "pagination": {
         "page_size": 100,
         "pages": 1,
@@ -87,7 +87,7 @@
       "request_urls": [
         "https://api.lever.co/v0/postings/spotify?mode=json&limit=100&skip=0"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-spotify/2272603b1d22487dac3d1d155e9cb00a.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/lever-spotify/76a18747cfc04b3cb7efec6696a2e56b.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/lever-spotify.json",
       "error": null
     },
@@ -95,20 +95,20 @@
       "platform": "ashby",
       "tenant": "ashby",
       "employer": "Ashby",
-      "status": "success",
-      "jobs_discovered": 75,
-      "jobs_processed": 75,
-      "jobs_inserted": 0,
+      "status": "SUCCESS",
+      "jobs_discovered": 76,
+      "jobs_processed": 76,
+      "jobs_inserted": 1,
       "jobs_updated": 75,
       "pagination": {
-        "total": 75,
-        "returned": 75,
+        "total": 76,
+        "returned": 76,
         "pagination_required": false
       },
       "request_urls": [
         "https://api.ashbyhq.com/posting-api/job-board/ashby?includeCompensation=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-ashby/428821b169194d7b9a2c1b81d1c2aef8.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-ashby/a3b8ca0fa02346d39e9793c534b0aba6.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/ashby-ashby.json",
       "error": null
     },
@@ -116,20 +116,20 @@
       "platform": "ashby",
       "tenant": "openai",
       "employer": "OpenAI",
-      "status": "success",
-      "jobs_discovered": 831,
-      "jobs_processed": 831,
-      "jobs_inserted": 1,
-      "jobs_updated": 830,
+      "status": "SUCCESS",
+      "jobs_discovered": 827,
+      "jobs_processed": 827,
+      "jobs_inserted": 2,
+      "jobs_updated": 825,
       "pagination": {
-        "total": 831,
-        "returned": 831,
+        "total": 827,
+        "returned": 827,
         "pagination_required": false
       },
       "request_urls": [
         "https://api.ashbyhq.com/posting-api/job-board/openai?includeCompensation=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-openai/87f160e4480a447d972826f450f7340c.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-openai/af3e00e1dcc8483c90383a22f4ed3ddf.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/ashby-openai.json",
       "error": null
     },
@@ -137,7 +137,7 @@
       "platform": "workable",
       "tenant": "huggingface",
       "employer": "Hugging Face",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 6,
       "jobs_processed": 6,
       "jobs_inserted": 0,
@@ -151,7 +151,7 @@
       "request_urls": [
         "https://apply.workable.com/api/v1/widget/accounts/huggingface?details=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-huggingface/1a8e2fde4bf447f08db61aa9876eb3e9.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-huggingface/dd75e89d944341af9c64fd239a9e8dca.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workable-huggingface.json",
       "error": null
     },
@@ -159,7 +159,7 @@
       "platform": "workable",
       "tenant": "runware",
       "employer": "Runware",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 24,
       "jobs_processed": 24,
       "jobs_inserted": 0,
@@ -173,7 +173,7 @@
       "request_urls": [
         "https://apply.workable.com/api/v1/widget/accounts/runware?details=true"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-runware/a03ef1dbb7e945f6ad7eb760c0aaa9d9.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-runware/ffc56d119c054086881b0047d4816595.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workable-runware.json",
       "error": null
     },
@@ -181,7 +181,7 @@
       "platform": "smartrecruiters",
       "tenant": "Canva",
       "employer": "Canva",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 36,
       "jobs_processed": 36,
       "jobs_inserted": 0,
@@ -234,7 +234,7 @@
         "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001331173",
         "https://api.smartrecruiters.com/v1/companies/Canva/postings/6000000001232280"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-canva/82baba29fc244eac94b94648cec7fbe5.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-canva/9e29d7d6f7d34c02b81614f31ac95c47.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/smartrecruiters-canva.json",
       "error": null
     },
@@ -242,7 +242,7 @@
       "platform": "smartrecruiters",
       "tenant": "innergy1",
       "employer": "INNERGY",
-      "status": "success",
+      "status": "SUCCESS",
       "jobs_discovered": 7,
       "jobs_processed": 7,
       "jobs_inserted": 0,
@@ -266,9 +266,303 @@
         "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990011377386",
         "https://api.smartrecruiters.com/v1/companies/innergy1/postings/3743990011377346"
       ],
-      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-innergy/a3ed23b3342545949c3459e7d614b951.json",
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-innergy/46df6561c38946a5824768e2c06a37a4.json",
       "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/smartrecruiters-innergy.json",
       "error": null
+    },
+    "recruitee-bunq": {
+      "platform": "recruitee",
+      "tenant": "bunq",
+      "employer": "bunq",
+      "status": "SUCCESS",
+      "jobs_discovered": 26,
+      "jobs_processed": 26,
+      "jobs_inserted": 26,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 26,
+        "returned": 26,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://bunq.recruitee.com/api/offers/"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/recruitee-bunq/6942c83237b5434fb1b81c1b3ae2da3d.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/recruitee-bunq.json",
+      "error": null
+    },
+    "recruitee-tellent": {
+      "platform": "recruitee",
+      "tenant": "jobs",
+      "employer": "Tellent",
+      "status": "SUCCESS",
+      "jobs_discovered": 13,
+      "jobs_processed": 13,
+      "jobs_inserted": 13,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 13,
+        "returned": 13,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://jobs.recruitee.com/api/offers/"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/recruitee-tellent/946abc698adf4921b557ec863906333e.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/recruitee-tellent.json",
+      "error": null
+    },
+    "pinpoint-avaaz": {
+      "platform": "pinpoint",
+      "tenant": "avaaz",
+      "employer": "Avaaz",
+      "status": "SUCCESS",
+      "jobs_discovered": 2,
+      "jobs_processed": 2,
+      "jobs_inserted": 2,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 2,
+        "returned": 2,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://avaaz.pinpointhq.com/postings.json"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/pinpoint-avaaz/18d8687c845e4009a2597b3a9f85e596.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/pinpoint-avaaz.json",
+      "error": null
+    },
+    "pinpoint-workwithus": {
+      "platform": "pinpoint",
+      "tenant": "workwithus",
+      "employer": "Work with Us",
+      "status": "SUCCESS",
+      "jobs_discovered": 4,
+      "jobs_processed": 4,
+      "jobs_inserted": 4,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 4,
+        "returned": 4,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://workwithus.pinpointhq.com/postings.json"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/pinpoint-workwithus/30f93d9a570e4e1aa9114001f81508b5.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/pinpoint-workwithus.json",
+      "error": null
+    },
+    "personio-lanch": {
+      "platform": "personio",
+      "tenant": "lanch",
+      "employer": "Lanch",
+      "status": "SUCCESS",
+      "jobs_discovered": 9,
+      "jobs_processed": 9,
+      "jobs_inserted": 9,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 9,
+        "returned": 9,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://lanch.jobs.personio.de/xml?language=en"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/personio-lanch/14322e3701d64d689d71a599bc5375bd.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/personio-lanch.json",
+      "error": null
+    },
+    "personio-deskbird": {
+      "platform": "personio",
+      "tenant": "deskbird",
+      "employer": "Deskbird",
+      "status": "SUCCESS",
+      "jobs_discovered": 4,
+      "jobs_processed": 4,
+      "jobs_inserted": 4,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 4,
+        "returned": 4,
+        "pagination_required": false
+      },
+      "request_urls": [
+        "https://deskbird.jobs.personio.de/xml?language=en"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/personio-deskbird/d32f6a11d01e41068f65f411cc6a9890.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/personio-deskbird.json",
+      "error": null
+    },
+    "teamtailor-bankgirotab": {
+      "platform": "teamtailor",
+      "tenant": "bankgirotab",
+      "employer": "Bankgirot",
+      "status": "SUCCESS",
+      "jobs_discovered": 2,
+      "jobs_processed": 2,
+      "jobs_inserted": 2,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 2,
+        "returned": 2,
+        "pagination_required": false,
+        "note": "RSS feeds may cap at 100 items."
+      },
+      "request_urls": [
+        "https://bankgirotab.teamtailor.com/jobs.rss"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/teamtailor-bankgirotab/8fe6bec5b9044007a05d424b22f1c454.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/teamtailor-bankgirotab.json",
+      "error": null
+    },
+    "teamtailor-doconomy": {
+      "platform": "teamtailor",
+      "tenant": "doconomy",
+      "employer": "Doconomy",
+      "status": "SUCCESS",
+      "jobs_discovered": 2,
+      "jobs_processed": 2,
+      "jobs_inserted": 2,
+      "jobs_updated": 0,
+      "pagination": {
+        "total": 2,
+        "returned": 2,
+        "pagination_required": false,
+        "note": "RSS feeds may cap at 100 items."
+      },
+      "request_urls": [
+        "https://doconomy.teamtailor.com/jobs.rss"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/teamtailor-doconomy/ddbb6b3585f144ef98eaa4851865ea79.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/teamtailor-doconomy.json",
+      "error": null
+    },
+    "rippling-netatwork": {
+      "platform": "rippling",
+      "tenant": "netatwork",
+      "employer": "Net at Work",
+      "status": "SUCCESS",
+      "jobs_discovered": 18,
+      "jobs_processed": 18,
+      "jobs_inserted": 18,
+      "jobs_updated": 0,
+      "pagination": {
+        "pages": 1,
+        "returned": 18,
+        "total_items": 18,
+        "total_pages": 1,
+        "complete": true
+      },
+      "request_urls": [
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs?page=0&pageSize=100&groupJobsByLocation=true",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/e7266b19-411b-468a-b6c4-1ff73c7f9989",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/ecdac508-7feb-4476-95bb-8f27af21f681",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/e7ff2ee2-ddc2-463c-b888-7b5694c4604b",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/18b11979-239a-4b6b-9e0b-fa1513dc818e",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/8d7c702a-0f3d-4ae5-88e5-d984c666015d",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/417f7efd-ce5e-4d49-9dd8-b8b84a57a62b",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/7a466889-b0f0-4164-97b1-73c3f4ff5af8",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/24ea1d4d-6aed-4bb1-be14-d8b7d24e3f38",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/815ffef4-7f64-4f5c-b34b-1d119f376201",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/787601ff-8766-4bb8-ad84-5c6e4dc72ae0",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/d504ff20-9b08-4429-847e-9e5c096a382d",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/20a294ca-6af4-40c4-88d1-3b1beb55cfae",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/601c5f15-cb08-4c57-a5a7-4b6c9ce37f38",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/76a3a414-fb7f-4e27-abd7-a9a1d8eb4c3e",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/c062e28a-5b40-4158-ad55-ab3d18d53587",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/f1b7f6ec-6d6b-4893-a81f-c2e737e7c88d",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/2d264d50-64fe-452c-af70-b7ea1a0a3be7",
+        "https://ats.rippling.com/api/v2/board/netatwork/jobs/549e2213-9824-46c3-8334-b7ff2fbecb34"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/rippling-netatwork/c0be73dfa1b148d8b1ebe31691ec1f02.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/rippling-netatwork.json",
+      "error": null
+    },
+    "rippling-realwork": {
+      "platform": "rippling",
+      "tenant": "realwork",
+      "employer": "RealWork",
+      "status": "SUCCESS",
+      "jobs_discovered": 4,
+      "jobs_processed": 4,
+      "jobs_inserted": 4,
+      "jobs_updated": 0,
+      "pagination": {
+        "pages": 1,
+        "returned": 4,
+        "total_items": 4,
+        "total_pages": 1,
+        "complete": true
+      },
+      "request_urls": [
+        "https://ats.rippling.com/api/v2/board/realwork/jobs?page=0&pageSize=100&groupJobsByLocation=true",
+        "https://ats.rippling.com/api/v2/board/realwork/jobs/35d7cc5b-e7cf-4cab-94e5-28d7e6ec1c97",
+        "https://ats.rippling.com/api/v2/board/realwork/jobs/3d89eacf-2fd1-46ba-9ea5-f8ca11f977ca",
+        "https://ats.rippling.com/api/v2/board/realwork/jobs/251eaca5-1d55-4425-9187-212e56862ad6",
+        "https://ats.rippling.com/api/v2/board/realwork/jobs/b65c6e6a-fd6f-47c0-b0f4-53b80b2fea9a"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/rippling-realwork/c2f00b832c8f4f10a947c1f13843ef19.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/rippling-realwork.json",
+      "error": null
+    },
+    "workday-salesforce": {
+      "platform": "workday",
+      "tenant": "salesforce",
+      "employer": "Salesforce",
+      "status": "PARTIAL_SUCCESS",
+      "jobs_discovered": 5,
+      "jobs_processed": 5,
+      "jobs_inserted": 5,
+      "jobs_updated": 0,
+      "pagination": {
+        "pages": 1,
+        "returned": 5,
+        "total_items": 1567,
+        "complete": false,
+        "limit_reason": "max_jobs_reached"
+      },
+      "request_urls": [
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs",
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/California---San-Francisco-Metro---Remote/Senior-Director--Content-Design---Slack_JR366375-2",
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/Taiwan---Remote/Account-Executive--Service-Cloud_JR367699-1",
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/California---San-Francisco/Specialist-Solution-Engineer-7_JR365737",
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/Texas---Dallas/Software-Engineering-LMTS_JR366708",
+        "https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/job/California---San-Francisco/Software-Engineering-LMTS_JR366707"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workday-salesforce/23545fc6f9bf4da49187eafa27060948.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workday-salesforce.json",
+      "error": "Workday fetch truncated: max_jobs_reached"
+    },
+    "workday-adobe": {
+      "platform": "workday",
+      "tenant": "adobe",
+      "employer": "Adobe",
+      "status": "PARTIAL_SUCCESS",
+      "jobs_discovered": 5,
+      "jobs_processed": 5,
+      "jobs_inserted": 5,
+      "jobs_updated": 0,
+      "pagination": {
+        "pages": 1,
+        "returned": 5,
+        "total_items": 273,
+        "complete": false,
+        "limit_reason": "max_jobs_reached"
+      },
+      "request_urls": [
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs",
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/Remote-Virginia/Enterprise-Sales-Account-Director---DHS-DOJ_R171389",
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/Washington-DC/Director-Cybersecurity-and-Fraud-Public-Policy_R173038",
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/Paris/Regional-Security-and-Safety-Manager-for-Western---EMEA_R173261",
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/London/Senior-Manager--Labor-Relations_R173441",
+        "https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/job/Noida/Group-Manager--Global-Customer-Operations---Growth_R171692"
+      ],
+      "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workday-adobe/3b43c318be734343b4eda8199d30b966.json",
+      "evidence_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/live_runs/workday-adobe.json",
+      "error": "Workday fetch truncated: max_jobs_reached"
     }
   }
 }

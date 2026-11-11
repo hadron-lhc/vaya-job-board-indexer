@@ -96,6 +96,58 @@ class HttpClient:
 
             return response
 
+
+    def post(
+        self,
+        url: str,
+        *,
+        json: Any | None = None,
+        headers: dict[str, str] | None = None,
+    ) -> httpx.Response:
+        request_headers = {
+            "User-Agent": self.user_agent,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        }
+        if headers:
+            request_headers.update(headers)
+
+        attempt = 0
+        while True:
+            try:
+                response = self._client.post(
+                    url,
+                    json=json,
+                    headers=request_headers,
+                )
+            except httpx.RequestError as exc:
+                if attempt >= self.max_retries:
+                    raise HttpError(
+                        f"request failed after {attempt + 1} attempt(s): {exc}",
+                        url=url,
+                    ) from exc
+                self._sleep(self._backoff_delay(attempt))
+                attempt += 1
+                continue
+
+            if response.status_code in RETRYABLE_STATUS_CODES and attempt < self.max_retries:
+                retry_after = self._retry_after_seconds(response.headers.get("Retry-After"))
+                delay = retry_after if retry_after is not None else self._backoff_delay(attempt)
+                self._sleep(min(max(delay, 0.0), 60.0))
+                attempt += 1
+                continue
+
+            if response.status_code >= 400:
+                body_preview = response.text[:300]
+                raise HttpError(
+                    f"HTTP {response.status_code} for {response.url}",
+                    url=str(response.url),
+                    status_code=response.status_code,
+                    body_preview=body_preview,
+                )
+
+            return response
+
     def _backoff_delay(self, attempt: int) -> float:
         base = min(self.backoff_base * (2**attempt), 8.0)
         return base + random.uniform(0.0, 0.25)

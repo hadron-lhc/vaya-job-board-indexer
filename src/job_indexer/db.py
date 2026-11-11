@@ -59,13 +59,6 @@ CREATE TABLE IF NOT EXISTS job_listings (
   UNIQUE(platform, source_instance, external_job_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_job_listings_source
-  ON job_listings(platform, source_instance);
-CREATE INDEX IF NOT EXISTS idx_job_listings_canonical
-  ON job_listings(canonical_job_id);
-CREATE INDEX IF NOT EXISTS idx_job_listings_status
-  ON job_listings(source_status);
-
 CREATE TABLE IF NOT EXISTS canonical_jobs (
   id TEXT PRIMARY KEY,
   normalized_title TEXT NOT NULL,
@@ -78,11 +71,6 @@ CREATE TABLE IF NOT EXISTS canonical_jobs (
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
-
-CREATE INDEX IF NOT EXISTS idx_canonical_key
-  ON canonical_jobs(normalized_company, normalized_title, normalized_location);
-CREATE INDEX IF NOT EXISTS idx_canonical_status
-  ON canonical_jobs(status);
 
 CREATE VIRTUAL TABLE IF NOT EXISTS canonical_job_search USING fts5(
   canonical_job_id UNINDEXED,
@@ -101,9 +89,6 @@ CREATE TABLE IF NOT EXISTS job_changes (
   old_value TEXT,
   new_value TEXT
 );
-
-CREATE INDEX IF NOT EXISTS idx_job_changes_listing
-  ON job_changes(job_listing_id, changed_at);
 
 CREATE TABLE IF NOT EXISTS fetch_runs (
   id TEXT PRIMARY KEY,
@@ -126,6 +111,23 @@ CREATE TABLE IF NOT EXISTS fetch_runs (
   pagination_json TEXT
 );
 
+"""
+
+
+
+INDEXES = """
+CREATE INDEX IF NOT EXISTS idx_job_listings_source
+  ON job_listings(platform, source_instance);
+CREATE INDEX IF NOT EXISTS idx_job_listings_canonical
+  ON job_listings(canonical_job_id);
+CREATE INDEX IF NOT EXISTS idx_job_listings_status
+  ON job_listings(source_status);
+CREATE INDEX IF NOT EXISTS idx_canonical_key
+  ON canonical_jobs(normalized_company, normalized_title, normalized_location);
+CREATE INDEX IF NOT EXISTS idx_canonical_status
+  ON canonical_jobs(status);
+CREATE INDEX IF NOT EXISTS idx_job_changes_listing
+  ON job_changes(job_listing_id, changed_at);
 CREATE INDEX IF NOT EXISTS idx_fetch_runs_source
   ON fetch_runs(source_instance, started_at);
 """
@@ -184,6 +186,7 @@ def _migrate(conn: sqlite3.Connection) -> None:
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(SCHEMA)
     _migrate(conn)
+    conn.executescript(INDEXES)
     conn.commit()
 
 
@@ -897,6 +900,12 @@ def get_canonical_job(conn: sqlite3.Connection, canonical_id: str) -> dict[str, 
     if row is None:
         return None
     job = dict(row)
+    job["source_count"] = int(
+        conn.execute(
+            "SELECT COUNT(*) AS count FROM job_listings WHERE canonical_job_id = ?",
+            (canonical_id,),
+        ).fetchone()["count"]
+    )
     job["sources"] = [
         dict(source)
         for source in conn.execute(
@@ -920,7 +929,10 @@ def get_source_status(conn: sqlite3.Connection) -> list[dict[str, Any]]:
           (SELECT started_at FROM fetch_runs fr WHERE fr.source_instance = s.name
              ORDER BY started_at DESC LIMIT 1) AS last_run_at,
           (SELECT completed_at FROM fetch_runs fr WHERE fr.source_instance = s.name
-             AND fr.status = 'SUCCESS' ORDER BY started_at DESC LIMIT 1) AS last_success_at
+             AND fr.status = 'SUCCESS' ORDER BY started_at DESC LIMIT 1) AS last_success_at,
+          (SELECT completed_at FROM fetch_runs fr WHERE fr.source_instance = s.name
+             AND fr.status IN ('SUCCESS', 'PARTIAL_SUCCESS')
+             ORDER BY started_at DESC LIMIT 1) AS last_evidence_at
         FROM source_instances s
         ORDER BY s.platform, s.name
         """

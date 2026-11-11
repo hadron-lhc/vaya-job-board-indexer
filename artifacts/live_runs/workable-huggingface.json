@@ -1,13 +1,13 @@
 {
-  "run_id": "1a8e2fde4bf447f08db61aa9876eb3e9",
+  "run_id": "dd75e89d944341af9c64fd239a9e8dca",
   "platform": "workable",
   "source_instance": "workable-huggingface",
   "employer": "Hugging Face",
   "tenant": "huggingface",
-  "status": "success",
-  "started_at": "2026-11-10T21:48:17.026375+00:00",
-  "completed_at": "2026-11-10T21:48:17.362104+00:00",
-  "duration_ms": 335,
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:01:50.618975+00:00",
+  "completed_at": "2026-11-11T01:01:51.116425+00:00",
+  "duration_ms": 497,
   "source_url": "https://apply.workable.com/huggingface",
   "request_urls": [
     "https://apply.workable.com/api/v1/widget/accounts/huggingface?details=true"
@@ -22,8 +22,12 @@
   "jobs_processed": 6,
   "jobs_inserted": 0,
   "jobs_updated": 6,
+  "jobs_changed": 6,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-huggingface/1a8e2fde4bf447f08db61aa9876eb3e9.json",
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/workable-huggingface/dd75e89d944341af9c64fd239a9e8dca.json",
   "fields_available": [
     "application_url",
     "company",
@@ -55,8 +59,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-05-29",
-      "first_seen_at": "2026-11-10T21:48:17.026400+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.026400+00:00"
+      "first_seen_at": "2026-11-11T01:01:50.619004+00:00",
+      "last_checked_at": "2026-11-11T01:01:50.619004+00:00"
     },
     {
       "platform": "workable",
@@ -72,8 +76,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-05-29",
-      "first_seen_at": "2026-11-10T21:48:17.026400+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.026400+00:00"
+      "first_seen_at": "2026-11-11T01:01:50.619004+00:00",
+      "last_checked_at": "2026-11-11T01:01:50.619004+00:00"
     },
     {
       "platform": "workable",
@@ -89,8 +93,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-09-02",
-      "first_seen_at": "2026-11-10T21:48:17.026400+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.026400+00:00"
+      "first_seen_at": "2026-11-11T01:01:50.619004+00:00",
+      "last_checked_at": "2026-11-11T01:01:50.619004+00:00"
     }
   ]
 }

@@ -20,6 +20,10 @@ from .db import (
 )
 
 
+class NotFoundError(Exception):
+    pass
+
+
 def _json_default(value: Any) -> Any:
     return str(value)
 
@@ -95,6 +99,8 @@ class JobIndexerRequestHandler(BaseHTTPRequestHandler):
                 self._json({"error": "not found"}, status=HTTPStatus.NOT_FOUND)
         except ValueError as exc:
             self._json({"error": str(exc)}, status=HTTPStatus.BAD_REQUEST)
+        except NotFoundError as exc:
+            self._json({"error": str(exc)}, status=HTTPStatus.NOT_FOUND)
         except FileNotFoundError as exc:
             self._json({"error": str(exc)}, status=HTTPStatus.INTERNAL_SERVER_ERROR)
         except Exception as exc:  # pragma: no cover - defensive boundary
@@ -160,7 +166,7 @@ class JobIndexerRequestHandler(BaseHTTPRequestHandler):
         finally:
             conn.close()
         if job is None:
-            raise LookupError("job not found")
+            raise NotFoundError("job not found")
         return job
 
     def _sources(self) -> dict[str, Any]:

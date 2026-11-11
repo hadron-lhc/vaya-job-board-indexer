@@ -1,3 +1,5 @@
+> Historical document. It describes an earlier phase and is superseded by `docs/final_report.md` and `docs/coverage_report.md`.
+
 # Phase 3 Report: Ashby, Workable, and SmartRecruiters
 
 ## Status

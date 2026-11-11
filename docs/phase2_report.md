@@ -1,3 +1,5 @@
+> Historical document. It describes an earlier phase and is superseded by `docs/final_report.md` and `docs/coverage_report.md`.
+
 # Phase 2 Report: Greenhouse and Lever Vertical Slice
 
 ## Status

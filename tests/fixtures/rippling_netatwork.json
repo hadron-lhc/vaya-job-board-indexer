@@ -1,0 +1,574 @@
+{
+  "list": {
+    "page": 0,
+    "pageSize": 100,
+    "totalItems": 2,
+    "totalPages": 1,
+    "items": [
+      {
+        "id": "e7266b19-411b-468a-b6c4-1ff73c7f9989",
+        "name": "Practice Director, Intacct",
+        "url": "https://ats.rippling.com/netatwork/jobs/e7266b19-411b-468a-b6c4-1ff73c7f9989",
+        "department": {
+          "name": "10 - Professional Services Group"
+        },
+        "locations": [
+          {
+            "name": "Remote (United States)",
+            "country": "United States",
+            "countryCode": "US",
+            "state": null,
+            "stateCode": null,
+            "city": null,
+            "workplaceType": "REMOTE"
+          }
+        ],
+        "language": "en-US"
+      },
+      {
+        "id": "ecdac508-7feb-4476-95bb-8f27af21f681",
+        "name": "Project Manager - Employee Experience",
+        "url": "https://ats.rippling.com/netatwork/jobs/ecdac508-7feb-4476-95bb-8f27af21f681",
+        "department": {
+          "name": "10 - Professional Services Group"
+        },
+        "locations": [
+          {
+            "name": "Remote (United States)",
+            "country": "United States",
+            "countryCode": "US",
+            "state": "",
+            "stateCode": null,
+            "city": "",
+            "workplaceType": "REMOTE"
+          }
+        ],
+        "language": "en-US"
+      }
+    ]
+  },
+  "details": {
+    "e7266b19-411b-468a-b6c4-1ff73c7f9989": {
+      "uuid": "e7266b19-411b-468a-b6c4-1ff73c7f9989",
+      "name": "Practice Director, Intacct",
+      "description": {
+        "company": "<div><body><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">About Net at Work</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:13.5pt;white-space:pre-wrap;\">Founded in 1996, Net at Work is one of North America’s largest technology advisors and solution providers for small and mid-size businesses. Our award-winning consultancy offers a rich portfolio of next-generation technology, industry expertise, implementation and managed services to help organizations derive value from the transformative benefits of technology. </span><br><br><span style=\"font-size:13.5pt;white-space:pre-wrap;\">Through the integration of ERP, HCM and/or CRM solutions, Net at Work  offers unique, industry-specific  solutions and operation platforms that enable companies to compete more effectively in today’s digital economy. For more information, visit www.netatwork.com. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p></body></div>",
+        "role": "<div><body><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">About this Position</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Net at Work is seeking a strategic and operationally strong Practice Director to lead and scale our Sage Intacct Practice. This is a senior leadership role responsible for the overall success of the practice, including strategy, delivery excellence, client outcomes, team leadership, operational performance, and profitable growth.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br><span style=\"font-size:13pt;white-space:pre-wrap;\">The Practice Director will partner closely with Executive Leadership, Sales, Solution Engineering, Marketing, Client Experience, Finance, and Alliances to strengthen Net at Work’s Sage Intacct market position and client delivery capabilities.</span><br><br><span style=\"font-size:13pt;white-space:pre-wrap;\">This role requires a leader who can operate strategically while remaining close to the business operationally — someone who understands consulting delivery, practice economics, ERP implementations, and how to build scalable teams and processes in a fast-paced, matrixed environment.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:13pt;white-space:pre-wrap;\"> </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Job Responsibilities</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Lead the overall strategy, direction, and growth of the Sage Intacct Practice.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Drive practice revenue, utilization, profitability, backlog management, and delivery performance.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Oversee staffing strategy, forecasting, capacity planning, and operational KPIs.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ensure high-quality ERP implementations and strong client outcomes.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Partner with Consulting Managers and delivery leaders to support project execution and escalation management.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Improve operational processes, reporting visibility, and delivery governance.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Lead, coach, and develop consulting and delivery leadership teams.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Support hiring, onboarding, mentorship, and career development across the practice.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Partner closely with Sales and Solution Engineering on opportunity qualification and delivery alignment.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Collaborate with Marketing on go-to-market messaging and vertical positioning.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Maintain strong relationships with Sage, strategic partners, and executive stakeholders.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Job Requirements</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">10+ years of experience in ERP consulting, professional services, technology advisory, or practice leadership.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Experience leading ERP consulting or implementation teams within a professional services environment.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Strong understanding of delivery operations, utilization management, project margin, staffing models, and consulting economics.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Experience with Sage Intacct or comparable cloud ERP/financial systems platforms preferred.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Proven ability to lead cross-functional teams within a matrixed organization.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Strong executive communication, client management, and leadership skills.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ability to balance strategic thinking with operational execution.</span></li></ul><h2 style='font-family:\"Basel Grotesk\",Arial,sans-serif;line-height:1.6;font-size:30pt;font-weight:600;letter-spacing:0.5px;margin-top:18px;margin-bottom:4px;padding-left:0px;'><span style=\"font-size:15pt;white-space:pre-wrap;\">Preferred Background</span></h2><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Sage Intacct consulting or partner ecosystem experience.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Mid-market ERP consulting environment.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Experience building scalable consulting practices and operational processes.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Experience working with CFOs, Controllers, COOs, and executive stakeholders.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Familiarity with implementation methodology, managed services, and professional services operations.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Customer Requirements</strong></b><span style=\"font-size:15pt;white-space:pre-wrap;\"> </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><span style=\"font-size:13pt;white-space:pre-wrap;\">This job may require access to customer information, systems, and/or premises.  As a result, this job may require customer approval for such access as an essential job function.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Core Values</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Client Champion</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> – Relentlessly exceed client expectations. Consistently anticipate needs to deliver valuable solutions and extraordinary outcomes.</span></li></ul><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Problem Solver</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> – Smart, analytical, inquisitive, knowledge-seeker that thrives on a challenge.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Promise Keeper </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Place high value on keeping our word and doing the right thing. Demonstrate honesty, integrity, and commitment.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Collaborative Integrator</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> –Team player, unifier, relationship-oriented, win-win seeker, exemplify the concept of relationships through trust and unity.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Driven Intrapreneur </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Exceed goals using independent creative thinking, optimism, self-confidence, and a can-do attitude.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Inspiring Coach </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Help employees, clients and partners using knowledge, expertise, experience, and situational fluency.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Compensation and Benefits</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Base salary range: TBD.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><span style=\"font-size:13pt;white-space:pre-wrap;\">This position is also eligible for a bonus in accordance with the terms of the Company's plan.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Please note that the quoted pay range for this job is a general guideline only and not a guarantee of compensation or salary. Additional factors considered in extending an offer include (but are not limited to) experience, including industry or product-specific experience, education, knowledge, skills, and abilities, as well as internal equity, alignment with market data, and/or other applicable laws.  </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">We provide competitive, affordable, and diverse benefit programs that support your total health – from healthy body to healthy mind. These benefits support you and your family in all aspects of life: </span></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Health and Welfare (Medical, Dental, Vision) </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Accident, Critical Illness, and Hospital Indemnity  </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Employee Assistance Program (EAP) </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Life and AD&amp;D Insurance </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Short- and Long-Term Disability Insurance </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Flexible Spending Accounts </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Transportation and Parking Accounts </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Health Savings Accounts (with company contribution) </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Retirement Planning (401k with matching contribution) </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Legal Benefits </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Identity Theft Protection </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Pet Insurance </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Wellness Program Offerings </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Paid Time Off, accrued per pay period based on years of service starting at 15 days annually.  </span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">8 Paid Holidays per year, including 1 floating holiday. </span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">The compensation and benefits information is accurate of the date of this posting and subject to plan eligibility. The Company reserves the right to modify this information at any time, with or without notice, subject to applicable law. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">The Company expects to accept applications for this position until November 30 , 2026 but encourages interested applicants to apply as soon as possible. We will review this information and one of our Talent Acquisition professionals will reach out if your background aligns to the positions.  </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:start;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">EOE/Diversity &amp; Inclusion Statement</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Net at Work is dedicated to unleashing the power and potential of our employees and teams by creating a vibrant and inclusive workplace where each employee can be their best. We are committed to fostering, cultivating, and preserving a culture of diversity and inclusion. We embrace and encourage equitable treatment of our employees and strive to create a work environment free of discrimination at all organizational levels and in all forms. Net at Work recognizes the rights of all individuals to mutual respect and the acceptance of others without biases based on differences of any kind. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.6;letter-spacing:0.25px;margin:4px 0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Net at Work is a proud equal opportunity employer. We are committed to fair hiring practices and to creating a welcoming environment for all team members that is free of discrimination and harassment. All employment decisions at Net at Work are based on business needs, job requirements, and individual qualifications without regard to race, color, religion or belief, family or parental status, gender, gender identity or expression, sexual orientation, national origin, veteran or disability status, or any other status protected by the laws or regulations in the locations where we operate.  </span></p></body></div>"
+      },
+      "workLocations": [
+        "Remote (United States)"
+      ],
+      "department": {
+        "name": "10 - Professional Services Group",
+        "base_department": "10 - Professional Services Group",
+        "department_tree": [
+          "10 - Professional Services Group"
+        ]
+      },
+      "employmentType": {
+        "label": "SALARIED_FT",
+        "id": "Salaried, full-time"
+      },
+      "createdOn": "2026-05-12T14:30:06.593000-07:00",
+      "activeJobApplication": {
+        "additionalQuestions": [
+          {
+            "form": {
+              "questions": [
+                {
+                  "uniqueKey": "5ba93ca3-5e16-4824-8202-3cb5a92606eb",
+                  "title": "Are you legally authorized to work for any employer in the U.S. now and in the future without the need for visa sponsorship?",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "4c44f7ec-2381-45ba-ad75-9afe346ae475",
+                  "title": "Do you now, or will you in the future, require visa sponsorship (e.g., H-1B, L-1) or are you currently working under F-1 OPT or STEM OPT status to work legally in the country in which this position is located for Net at Work or any of its affiliates?    Please note: At this time, Net at Work and its affiliates are not able to consider candidates who require current or future visa sponsorship, or candidates working under F-1 OPT or STEM OPT authorization. ",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": true,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "786ad2d4-05ae-40ff-a874-caa918919d74",
+                  "title": "Are you currently subject to any agreement—such as a non-compete, non-solicitation, or required notice period—that would legally restrict or prevent you from performing the responsibilities of this role or working with our clients? Please do not disclose any confidential, proprietary, or trade secret information in your response.",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "9cab2c7c-56f4-40f1-b633-11bdf51b041f",
+                  "title": "What are your salary expectations for this position?",
+                  "tags": [],
+                  "dataType": "Text",
+                  "questionType": "SHORT_ANSWER",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "maxChars": 50,
+                  "strChoices": [],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "2e918173-afee-48ea-b922-0e408fed3a91",
+                  "title": "How did you learn about this job opportunity?",
+                  "tags": [],
+                  "dataType": "enum",
+                  "questionType": "SINGLE_SELECT_DROPDOWN",
+                  "isRequired": true,
+                  "allowComments": true,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Employee Referral (please indicate name of referring employee)",
+                    "LinkedIn",
+                    "Indeed",
+                    "Net at Work Careers Site",
+                    "ZipRecruiter",
+                    "Recruiting Event",
+                    "Internal Candidate"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": true
+                },
+                {
+                  "uniqueKey": "d3c40935-d8ae-4c0b-82ea-d42c2caf32ff",
+                  "title": "Please describe your experience using AI tools, automation, or AI-enabled technologies in your work, including how you’ve applied them and the level of hands-on involvement you’ve had.",
+                  "tags": [],
+                  "dataType": "Text",
+                  "questionType": "LONG_ANSWER",
+                  "isRequired": false,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "21f42ce3-8740-45ab-8b59-7cf0c5527832",
+                  "title": "At-Will Employment Statement",
+                  "description": "",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "MULTI_SELECT_CHECKBOX",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "By clicking the check box, I understand that neither the completion of this application nor any other part of my consideration for employment establishes any obligation for Net at Work to hire me. If I am hired, I understand that either Net at Work or I can terminate my employment at any time and for any reason, with or without cause and without prior notice. I understand that no representative of Net at Work has the authority to make any assurance to the contrary."
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                }
+              ],
+              "deletedQuestions": [],
+              "sections": [],
+              "deletedSections": [],
+              "skipLogic": []
+            },
+            "name": "NAW - Work Eligibility, Compensation Expectations, Job Source & Will, AI capabilities",
+            "id": "6ae38bd4559a43d83004a977"
+          }
+        ],
+        "basicQuestions": [
+          {
+            "oid": "first_name",
+            "fieldType": "SHORT_ANSWER",
+            "title": "First name",
+            "required": true
+          },
+          {
+            "oid": "last_name",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Last name",
+            "required": true
+          },
+          {
+            "oid": "email",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Email",
+            "required": true
+          },
+          {
+            "oid": "pronouns",
+            "fieldType": "PRONOUN",
+            "title": "Pronouns",
+            "required": false
+          },
+          {
+            "oid": "current_company",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Current company",
+            "required": false
+          },
+          {
+            "oid": "phone_number",
+            "fieldType": "PHONE_NUMBER",
+            "title": "Phone number",
+            "required": true
+          },
+          {
+            "oid": "location",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Location (city only)",
+            "required": true
+          },
+          {
+            "oid": "linkedin_link",
+            "fieldType": "SHORT_ANSWER",
+            "title": "LinkedIn link",
+            "required": true
+          },
+          {
+            "oid": "resume",
+            "fieldType": "FILE",
+            "title": "Resume",
+            "required": true
+          },
+          {
+            "oid": "cover_letter",
+            "fieldType": "FILE",
+            "title": "Cover letter",
+            "required": false
+          }
+        ]
+      },
+      "eeocQuestionnaireEnabled": true,
+      "eeocQuestionnaireEnabledForJobPost": true,
+      "url": "https://ats.rippling.com/netatwork/jobs/e7266b19-411b-468a-b6c4-1ff73c7f9989",
+      "board": {
+        "boardType": "RIPPLING",
+        "slug": "netatwork",
+        "logo": {
+          "name": "netatwork-logo.png",
+          "url": "https://secured-assets.ripplingcdn.com/us1/ats/646fe6577c0cb14d8d1f3955/ats_public/421878b4991bf2270a56b09c9b7b6e84-sensitive?Expires=1794444972&Signature=AaoThYFuSKGn7zHr3A~HBjTvut~GmXR7cV7Ml5dr3gpqlD6x7gPbn6AaHa~tNoi3ISEIx2BBbzrb9imuiNzKIIBIogHCmstrUW2jwJLJNHJOW53r5H0tgQSJOEnpU~xAcyRWTt6Z051Ok6~iIli6~CZWzjytv-xWXoxtypdSLtaQr0Y-jYHEOzlhNChN5tQjQDXcegk5gJ9gjzTLkPttldgjjFQdnUZHJ7rgkPyubnnxi3wQ2M6EAupEDvZn9CPpBgY5mCZ5MIuKBNpVQSWMj38qwMd7dFiZVH1QcRrN3v51icMrqTG-gjzI3FV0VEO0B9yG6n8UHZbeX~ialakKzg__&Key-Pair-Id=K2SM3GXN9F9XGM",
+          "type": "image/png"
+        },
+        "banner": {
+          "name": "",
+          "url": null,
+          "type": ""
+        },
+        "title": "Net at Work Job Openings",
+        "subtitle": "Unleash Your Talent. Join Net at Work today!",
+        "boardURL": "https://ats.rippling.com/netatwork/jobs",
+        "fontType": null,
+        "linkColor": null,
+        "buttonColor": null,
+        "buttonTextColor": null,
+        "legalNotice": "<p id=\"isPasted\" style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>The federal Transparency in Coverage Final Rules require certain group health plans to disclose on a public website information regarding in-network provider rates and historical out-of-network allowed amounts and billed charges for covered items and services in two separate machine-readable files (MRFs). The MRFs for the benefit package options under the Net at Work, LLC Health and Welfare Benefit Plan are linked below:</em></p><p style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>&nbsp;<a href=\"https://www.cigna.com/legal/compliance/machine-readable-files\" style=\"text-decoration: none;\" target=\"_blank\">https://www.cigna.com/legal/compliance/machine-readable-files</a></em></p><p style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>This includes negotiated service rates and out-of-network allowed amounts between health plans and healthcare providers. The machine-readable files are formatted to enable researchers, regulators, and application developers to access and analyze data more easily.</em></p>",
+        "noOpeningsMessage": null,
+        "groupJobsByLocation": false,
+        "showBoardLogoOnJobPost": false,
+        "showCompanyInfoUnderJobPost": false,
+        "companyName": "Net at Work, LLC",
+        "isTest": false
+      },
+      "payRangeDetails": [],
+      "applicationConfirmationTemplate": "65362643a4e94ebf49d74c43",
+      "hasAIEvaluationsEnabled": true,
+      "companyName": "Net at Work, LLC",
+      "unlistedFromSearch": false,
+      "jsonLd": null
+    },
+    "ecdac508-7feb-4476-95bb-8f27af21f681": {
+      "uuid": "ecdac508-7feb-4476-95bb-8f27af21f681",
+      "name": "Project Manager - Employee Experience",
+      "description": {
+        "company": "<div><body><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:18pt;white-space:pre-wrap;\">About Net at Work</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><span style=\"font-size:13.5pt;white-space:pre-wrap;\">Founded in 1996, Net at Work is one of North America’s largest technology advisors and solution providers for small and mid-size businesses. Our award-winning consultancy offers a rich portfolio of next-generation technology, industry expertise, implementation and managed services to help organizations derive value from the transformative benefits of technology. </span><br><br><span style=\"font-size:13.5pt;white-space:pre-wrap;\">Through the integration of ERP, HCM and/or CRM solutions, Net at Work  offers unique, industry-specific  solutions and operation platforms that enable companies to compete more effectively in today’s digital economy. For more information, visit www.netatwork.com. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p></body></div>",
+        "role": "<div><body><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">About this Position</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><span style=\"font-size:13pt;white-space:pre-wrap;\">The Employee Experience Project Manager (PM) is responsible for the successful planning, coordination, and delivery of Human Capital Management (HCM) solutions for Net at Work clients. This role centers around client excellence—building trusted partnerships, maintaining high satisfaction levels, and driving long-term value. The PM works directly with clients to clarify business requirements, propose scalable solutions, and ensure smooth implementation. They serve as the key liaison between clients and internal teams, leveraging strong communication, leadership, and problem-solving skills. The PM also supports the sales team by contributing to project scoping and helping to expand client relationships through ongoing service opportunities.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Job Responsibilities</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Client Relationship Management &amp; Client Excellence</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Serve as the trusted advisor and primary contact for clients throughout the project lifecycle.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Build strong, lasting relationships with client stakeholders, ensuring satisfaction and long-term engagement.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Maintain a proactive approach to client communications, providing strategic updates and anticipating needs.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Collaborate with internal teams to align project execution with client goals and desired outcomes.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ensure a seamless handoff to post-implementation support teams, maintaining continuity and trust.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Identify opportunities for additional services or support, contributing to account growth and retention.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Project Planning &amp; Initiation</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Define detailed project plans, including timelines, milestones, budgets, and resource requirements.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Coordinate team onboarding and ensure readiness for project execution.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Share pre-kickoff materials (e.g., questionnaires, onboarding materials) with clients.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Lead internal and external project kickoff meetings.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Project Execution &amp; Coordination</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Direct project execution in alignment with defined schedules, budgets, and scope.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Coordinate and assign tasks across the project team to ensure timely delivery.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Monitor progress and make necessary adjustments to meet client expectations.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Track milestones and timelines, adjusting workflows and resources as needed.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ensure smaller projects are progressing appropriately, even if formal meetings are not required.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Monitor third-party project status and follow up on closure timelines.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Client &amp; Stakeholder Communication</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Serve as the primary point of contact for all project stakeholders internally and externally.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Conduct regular project status calls based on project size and complexity.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Send project status summary emails and post meeting recaps/status reports to the project folder.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Maintain an up-to-date project plan and communicate changes proactively internally and with the client.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Provide timely updates to clients and executive leadership.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Issue Management &amp; Risk Mitigation</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Monitor the “pulse” of open issues and tickets to ensure timely resolution.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Identify, analyze, and resolve issues that may impact project performance or deliverables.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Facilitate issue resolution to keep the project on track and within defined parameters.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Escalate risks appropriately and implement mitigation strategies.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Project Closure &amp; Transition</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ensure completion of all deliverables and adherence to quality standards.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Conduct project closure and support transition meetings.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Capture lessons learned and contribute to continuous improvement efforts.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px 0px 0in;padding:0px;'><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">🔹 Process Improvement &amp; Strategic Input</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Provide strategic input for improving administrative and business processes.</span></li><li style=\"margin:0px 0px 0in;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Contribute to process analysis, redesign, and organizational effectiveness initiatives.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Job Requirements</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">BA or BS in Computer Science or related field, PMP Certification preferred</span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Strong project management background, proven success in delivering projects on time, on budget and in scope.</span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">4+ years’ experience in information systems development or implementation with progressively more complex responsibilities and accountabilities, with a focus on HRIS implementation and management.</span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Ability to effectively document business and technical designs</span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Strong understanding of HR and payroll processes, regulations, and best practices.</span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Successful track record of delivering on agreed-upon business objectives and performance on key metrics.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Customer Requirements</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><span style=\"font-size:13pt;white-space:pre-wrap;\">This job may require access to customer information, systems, and/or premises.  As a result, this job may require customer approval for such access as an essential job function.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Core Values</strong></b></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Client Champion</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> – Relentlessly exceed client expectations. Consistently anticipate needs to deliver valuable solutions and extraordinary outcomes.</span></li></ul><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Problem Solver</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> – Smart, analytical, inquisitive, knowledge-seeker that thrives on a challenge.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Promise Keeper </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Place high value on keeping our word and doing the right thing. Demonstrate honesty, integrity, and commitment.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Collaborative Integrator</strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\"> –Team player, unifier, relationship-oriented, win-win seeker, exemplify the concept of relationships through trust and unity.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Driven Intrapreneur </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Exceed goals using independent creative thinking, optimism, self-confidence, and a can-do attitude.</span></li><li style=\"margin:3px 0px;font-size:13pt;line-height:1.6;letter-spacing:0.25px;text-align:start;\"><b><strong style=\"font-size:13pt;white-space:pre-wrap;\">Inspiring Coach </strong></b><span style=\"font-size:13pt;white-space:pre-wrap;\">– Help employees, clients and partners using knowledge, expertise, experience, and situational fluency.</span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">Compensation and Benefits</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Base salary range: $</span><span style=\"color:black;font-size:13pt;white-space:pre-wrap;\">85,000-$115,000.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><span style=\"font-size:13pt;white-space:pre-wrap;\">This position is also eligible for a bonus in accordance with the terms of the Company's plan.</span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Please note that the quoted pay range for this job is a general guideline only and not a guarantee of compensation or salary. Additional factors considered in extending an offer include (but are not limited to) experience, including industry or product-specific experience, education, knowledge, skills, and abilities, as well as internal equity, alignment with market data, and/or other applicable laws.  </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">We provide competitive, affordable, and diverse benefit programs that support your total health – from healthy body to healthy mind. These benefits support you and your family in all aspects of life: </span></p><ul style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11pt;font-weight:400;margin:8px 0px;line-height:1.6;padding:0px 0px 0px 32px;list-style-type:disc;'><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Health and Welfare (Medical, Dental, Vision) </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Accident, Critical Illness, and Hospital Indemnity  </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Employee Assistance Program (EAP) </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Life and AD&amp;D Insurance </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Short- and Long-Term Disability Insurance </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Flexible Spending Accounts </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Transportation and Parking Accounts </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Health Savings Accounts (with company contribution) </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Retirement Planning (401k with matching contribution) </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Legal Benefits </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Identity Theft Protection </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Pet Insurance </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Wellness Program Offerings </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">Paid Time Off, accrued per pay period based on years of service starting at 15 days annually.  </span></li><li style=\"margin:0px;font-size:13pt;line-height:1.38;letter-spacing:0.25px;\"><span style=\"font-size:13pt;white-space:pre-wrap;\">8 Paid Holidays per year, including 1 floating holiday. </span></li></ul><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">The compensation and benefits information is accurate of the date of this posting and subject to plan eligibility. The Company reserves the right to modify this information at any time, with or without notice, subject to applicable law. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">The Company expects to accept applications for this position until December 10, 2026 but encourages interested applicants to apply as soon as possible. We will review this information and one of our Talent Acquisition professionals will reach out if your background aligns to the positions.  </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:15pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><b><strong style=\"font-size:15pt;white-space:pre-wrap;\">EOE/Diversity &amp; Inclusion Statement</strong></b></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:start;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:13pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Net at Work is dedicated to unleashing the power and potential of our employees and teams by creating a vibrant and inclusive workplace where each employee can be their best. We are committed to fostering, cultivating, and preserving a culture of diversity and inclusion. We embrace and encourage equitable treatment of our employees and strive to create a work environment free of discrimination at all organizational levels and in all forms. Net at Work recognizes the rights of all individuals to mutual respect and the acceptance of others without biases based on differences of any kind. </span></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:5pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><br></p><p style='font-family:\"Basel Grotesk\",Arial,sans-serif;font-size:11.25pt;font-weight:400;line-height:1.38;letter-spacing:0.25px;margin:0px;padding:0px;text-align:left;'><span style=\"font-size:13pt;white-space:pre-wrap;\">Net at Work is a proud equal opportunity employer. We are committed to fair hiring practices and to creating a welcoming environment for all team members that is free of discrimination and harassment. All employment decisions at Net at Work are based on business needs, job requirements, and individual qualifications without regard to race, color, religion or belief, family or parental status, gender, gender identity or expression, sexual orientation, national origin, veteran or disability status, or any other status protected by the laws or regulations in th</span><span style=\"white-space:pre-wrap;\">e locations where we operate. </span><span style=\"font-size:12pt;white-space:pre-wrap;\"> </span></p></body></div>"
+      },
+      "workLocations": [
+        "Remote (United States)"
+      ],
+      "department": {
+        "name": "10 - Professional Services Group",
+        "base_department": "10 - Professional Services Group",
+        "department_tree": [
+          "10 - Professional Services Group"
+        ]
+      },
+      "employmentType": {
+        "label": "SALARIED_FT",
+        "id": "Salaried, full-time"
+      },
+      "createdOn": "2026-11-10T06:08:40.608000-08:00",
+      "activeJobApplication": {
+        "additionalQuestions": [
+          {
+            "form": {
+              "questions": [
+                {
+                  "uniqueKey": "5ba93ca3-5e16-4824-8202-3cb5a92606eb",
+                  "title": "Are you legally authorized to work for any employer in the U.S. now and in the future without the need for visa sponsorship?",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "4c44f7ec-2381-45ba-ad75-9afe346ae475",
+                  "title": "Do you now, or will you in the future, require visa sponsorship (e.g., H-1B, L-1) or are you currently working under F-1 OPT or STEM OPT status to work legally in the country in which this position is located for Net at Work or any of its affiliates?    Please note: At this time, Net at Work and its affiliates are not able to consider candidates who require current or future visa sponsorship, or candidates working under F-1 OPT or STEM OPT authorization. ",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": true,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "786ad2d4-05ae-40ff-a874-caa918919d74",
+                  "title": "Are you currently subject to any agreement—such as a non-compete, non-solicitation, or required notice period—that would legally restrict or prevent you from performing the responsibilities of this role or working with our clients? Please do not disclose any confidential, proprietary, or trade secret information in your response.",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "KNOCKOUT",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "9cab2c7c-56f4-40f1-b633-11bdf51b041f",
+                  "title": "What are your salary expectations for this position?",
+                  "tags": [],
+                  "dataType": "Text",
+                  "questionType": "SHORT_ANSWER",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "maxChars": 50,
+                  "strChoices": [],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "2e918173-afee-48ea-b922-0e408fed3a91",
+                  "title": "How did you learn about this job opportunity?",
+                  "tags": [],
+                  "dataType": "enum",
+                  "questionType": "SINGLE_SELECT_DROPDOWN",
+                  "isRequired": true,
+                  "allowComments": true,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "Employee Referral (please indicate name of referring employee)",
+                    "LinkedIn",
+                    "Indeed",
+                    "Net at Work Careers Site",
+                    "ZipRecruiter",
+                    "Recruiting Event",
+                    "Internal Candidate"
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": true
+                },
+                {
+                  "uniqueKey": "d3c40935-d8ae-4c0b-82ea-d42c2caf32ff",
+                  "title": "Please describe your experience using AI tools, automation, or AI-enabled technologies in your work, including how you’ve applied them and the level of hands-on involvement you’ve had.",
+                  "tags": [],
+                  "dataType": "Text",
+                  "questionType": "LONG_ANSWER",
+                  "isRequired": false,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": false,
+                  "isOtherEnabled": false
+                },
+                {
+                  "uniqueKey": "21f42ce3-8740-45ab-8b59-7cf0c5527832",
+                  "title": "At-Will Employment Statement",
+                  "description": "",
+                  "tags": [],
+                  "dataType": "select",
+                  "questionType": "MULTI_SELECT_CHECKBOX",
+                  "isRequired": true,
+                  "allowComments": false,
+                  "canEdit": false,
+                  "isPrivate": false,
+                  "strChoices": [
+                    "By clicking the check box, I understand that neither the completion of this application nor any other part of my consideration for employment establishes any obligation for Net at Work to hire me. If I am hired, I understand that either Net at Work or I can terminate my employment at any time and for any reason, with or without cause and without prior notice. I understand that no representative of Net at Work has the authority to make any assurance to the contrary."
+                  ],
+                  "intChoices": [],
+                  "isMultiSelectEnabled": true,
+                  "isOtherEnabled": false
+                }
+              ],
+              "deletedQuestions": [],
+              "sections": [],
+              "deletedSections": [],
+              "skipLogic": []
+            },
+            "name": "NAW - Work Eligibility, Compensation Expectations, Job Source & Will, AI capabilities",
+            "id": "6af32d3d38fd978076c36715"
+          }
+        ],
+        "basicQuestions": [
+          {
+            "oid": "first_name",
+            "fieldType": "SHORT_ANSWER",
+            "title": "First name",
+            "required": true
+          },
+          {
+            "oid": "last_name",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Last name",
+            "required": true
+          },
+          {
+            "oid": "email",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Email",
+            "required": true
+          },
+          {
+            "oid": "pronouns",
+            "fieldType": "PRONOUN",
+            "title": "Pronouns",
+            "required": false
+          },
+          {
+            "oid": "current_company",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Current company",
+            "required": false
+          },
+          {
+            "oid": "phone_number",
+            "fieldType": "PHONE_NUMBER",
+            "title": "Phone number",
+            "required": true
+          },
+          {
+            "oid": "location",
+            "fieldType": "SHORT_ANSWER",
+            "title": "Location (city only)",
+            "required": true
+          },
+          {
+            "oid": "resume",
+            "fieldType": "FILE",
+            "title": "Resume",
+            "required": true
+          },
+          {
+            "oid": "cover_letter",
+            "fieldType": "FILE",
+            "title": "Cover letter",
+            "required": false
+          }
+        ]
+      },
+      "eeocQuestionnaireEnabled": true,
+      "eeocQuestionnaireEnabledForJobPost": true,
+      "url": "https://ats.rippling.com/netatwork/jobs/ecdac508-7feb-4476-95bb-8f27af21f681",
+      "board": {
+        "boardType": "RIPPLING",
+        "slug": "netatwork",
+        "logo": {
+          "name": "netatwork-logo.png",
+          "url": "https://secured-assets.ripplingcdn.com/us1/ats/646fe6577c0cb14d8d1f3955/ats_public/421878b4991bf2270a56b09c9b7b6e84-sensitive?Expires=1794444972&Signature=AaoThYFuSKGn7zHr3A~HBjTvut~GmXR7cV7Ml5dr3gpqlD6x7gPbn6AaHa~tNoi3ISEIx2BBbzrb9imuiNzKIIBIogHCmstrUW2jwJLJNHJOW53r5H0tgQSJOEnpU~xAcyRWTt6Z051Ok6~iIli6~CZWzjytv-xWXoxtypdSLtaQr0Y-jYHEOzlhNChN5tQjQDXcegk5gJ9gjzTLkPttldgjjFQdnUZHJ7rgkPyubnnxi3wQ2M6EAupEDvZn9CPpBgY5mCZ5MIuKBNpVQSWMj38qwMd7dFiZVH1QcRrN3v51icMrqTG-gjzI3FV0VEO0B9yG6n8UHZbeX~ialakKzg__&Key-Pair-Id=K2SM3GXN9F9XGM",
+          "type": "image/png"
+        },
+        "banner": {
+          "name": "",
+          "url": null,
+          "type": ""
+        },
+        "title": "Net at Work Job Openings",
+        "subtitle": "Unleash Your Talent. Join Net at Work today!",
+        "boardURL": "https://ats.rippling.com/netatwork/jobs",
+        "fontType": null,
+        "linkColor": null,
+        "buttonColor": null,
+        "buttonTextColor": null,
+        "legalNotice": "<p id=\"isPasted\" style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>The federal Transparency in Coverage Final Rules require certain group health plans to disclose on a public website information regarding in-network provider rates and historical out-of-network allowed amounts and billed charges for covered items and services in two separate machine-readable files (MRFs). The MRFs for the benefit package options under the Net at Work, LLC Health and Welfare Benefit Plan are linked below:</em></p><p style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>&nbsp;<a href=\"https://www.cigna.com/legal/compliance/machine-readable-files\" style=\"text-decoration: none;\" target=\"_blank\">https://www.cigna.com/legal/compliance/machine-readable-files</a></em></p><p style=\"margin: 0px 0px 11px; font-size: 15px; font-style: normal; font-weight: 400; text-align: center; text-indent: 0px;\"><em>This includes negotiated service rates and out-of-network allowed amounts between health plans and healthcare providers. The machine-readable files are formatted to enable researchers, regulators, and application developers to access and analyze data more easily.</em></p>",
+        "noOpeningsMessage": null,
+        "groupJobsByLocation": false,
+        "showBoardLogoOnJobPost": false,
+        "showCompanyInfoUnderJobPost": false,
+        "companyName": "Net at Work, LLC",
+        "isTest": false
+      },
+      "payRangeDetails": [],
+      "applicationConfirmationTemplate": "65362643a4e94ebf49d74c43",
+      "hasAIEvaluationsEnabled": true,
+      "companyName": "Net at Work, LLC",
+      "unlistedFromSearch": false,
+      "jsonLd": null
+    }
+  }
+}

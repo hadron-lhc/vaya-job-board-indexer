@@ -1,28 +1,32 @@
 {
-  "run_id": "428821b169194d7b9a2c1b81d1c2aef8",
+  "run_id": "a3b8ca0fa02346d39e9793c534b0aba6",
   "platform": "ashby",
   "source_instance": "ashby-ashby",
   "employer": "Ashby",
   "tenant": "ashby",
-  "status": "success",
-  "started_at": "2026-11-10T21:48:14.948116+00:00",
-  "completed_at": "2026-11-10T21:48:15.614534+00:00",
-  "duration_ms": 666,
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:01:30.851771+00:00",
+  "completed_at": "2026-11-11T01:01:32.716010+00:00",
+  "duration_ms": 1864,
   "source_url": "https://jobs.ashbyhq.com/ashby",
   "request_urls": [
     "https://api.ashbyhq.com/posting-api/job-board/ashby?includeCompensation=true"
   ],
   "pagination": {
-    "total": 75,
-    "returned": 75,
+    "total": 76,
+    "returned": 76,
     "pagination_required": false
   },
-  "jobs_discovered": 75,
-  "jobs_processed": 75,
-  "jobs_inserted": 0,
+  "jobs_discovered": 76,
+  "jobs_processed": 76,
+  "jobs_inserted": 1,
   "jobs_updated": 75,
+  "jobs_changed": 75,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-ashby/428821b169194d7b9a2c1b81d1c2aef8.json",
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/ashby-ashby/a3b8ca0fa02346d39e9793c534b0aba6.json",
   "fields_available": [
     "application_url",
     "company",
@@ -55,8 +59,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2024-03-04T14:29:08.532+00:00",
-      "first_seen_at": "2026-11-10T21:48:14.948137+00:00",
-      "last_checked_at": "2026-11-10T21:48:14.948137+00:00"
+      "first_seen_at": "2026-11-11T01:01:30.851798+00:00",
+      "last_checked_at": "2026-11-11T01:01:30.851798+00:00"
     },
     {
       "platform": "ashby",
@@ -72,8 +76,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-09-08T16:27:26.694+00:00",
-      "first_seen_at": "2026-11-10T21:48:14.948137+00:00",
-      "last_checked_at": "2026-11-10T21:48:14.948137+00:00"
+      "first_seen_at": "2026-11-11T01:01:30.851798+00:00",
+      "last_checked_at": "2026-11-11T01:01:30.851798+00:00"
     },
     {
       "platform": "ashby",
@@ -89,8 +93,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2025-12-05T22:43:22.147+00:00",
-      "first_seen_at": "2026-11-10T21:48:14.948137+00:00",
-      "last_checked_at": "2026-11-10T21:48:14.948137+00:00"
+      "first_seen_at": "2026-11-11T01:01:30.851798+00:00",
+      "last_checked_at": "2026-11-11T01:01:30.851798+00:00"
     }
   ]
 }

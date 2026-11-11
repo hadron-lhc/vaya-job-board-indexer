@@ -45,12 +45,20 @@ def main() -> int:
         return 2
 
     args.evidence_dir.mkdir(parents=True, exist_ok=True)
+    summary_path = args.evidence_dir / "summary.json"
+    existing_sources: dict = {}
+    if summary_path.exists():
+        try:
+            existing_sources = json.loads(summary_path.read_text(encoding="utf-8")).get("sources", {})
+        except (ValueError, AttributeError):
+            existing_sources = {}
     summary = {
         "checked_at": datetime.now(timezone.utc).isoformat(),
         "config": str(args.config),
-        "sources": {},
+        "sources": existing_sources,
     }
     failed = False
+    partial = False
 
     with HttpClient() as http:
         for name in selected:
@@ -90,16 +98,19 @@ def main() -> int:
                 f"inserted={result.jobs_inserted} "
                 f"updated={result.jobs_updated}"
             )
-            if result.status != "success":
+            if result.status == "PARTIAL_SUCCESS":
+                partial = True
+            elif result.status != "SUCCESS":
                 failed = True
 
-    summary_path = args.evidence_dir / "summary.json"
     summary_path.write_text(
         json.dumps(summary, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
     print(f"Evidence: {summary_path}")
-    return 1 if failed else 0
+    if failed:
+        return 1
+    return 2 if partial else 0
 
 
 if __name__ == "__main__":

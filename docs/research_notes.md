@@ -30,14 +30,14 @@ Primary research inputs:
 - `RESEARCHED`: enough desk research and/or live evidence to propose an extraction path. This does not mean the endpoint, tenant, or schema is fully verified.
 - `ACCESS_BLOCKED`: live access failed with 403, DNS failure, or another blocking condition, and no verified workaround exists.
 - `NOT_RESEARCHED`: product identity or public job surface is still unverified.
-- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. Phase 3 uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse, Lever, Ashby, Workable, and SmartRecruiters.
+- `IMPLEMENTED`, `FIXTURE_TESTED`, `LIVE_TESTED_ONE_TENANT`, `LIVE_TESTED_MULTI_TENANT`, `VERIFIED`: not used in Phase 1 because no connectors existed yet. The implemented batch uses `LIVE_TESTED_MULTI_TENANT` for Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Recruitee, Pinpoint, Personio, Teamtailor, Rippling, and Workday.
 
 Current matrix status counts:
 
 | Status | Count |
 | --- | ---: |
-| `RESEARCHED` | 66 |
-| `LIVE_TESTED_MULTI_TENANT` | 5 |
+| `RESEARCHED` | 60 |
+| `LIVE_TESTED_MULTI_TENANT` | 11 |
 | `ACCESS_BLOCKED` | 6 |
 | `NOT_RESEARCHED` | 1 |
 | Total | 78 |
@@ -293,17 +293,25 @@ Priority 4: resolve identity or access
 9. Niceboard live tenant
 10. Jobvite live tenant
 
-## 10. Phase 3 outcome
+## 10. Implementation outcome
 
-Phase 3 selected and implemented Ashby, Workable, and SmartRecruiters from the public structured-feed candidates. Recruitee was not selected because of its documented auth-token requirement starting 2027-02-10. Pinpoint and Personio remain candidates for a later batch; Personio requires XML parsing, and Pinpoint still needs a second verified real tenant. Teamtailor's RSS feed is less complete for descriptions.
+The implemented batch covers eleven platforms with two live-verified employer instances per platform:
 
-The implemented connectors use two real employers per platform:
-
+- Greenhouse: `stripe`, `airbnb`
+- Lever: `palantir`, `spotify`
 - Ashby: `ashby`, `openai`
 - Workable: `huggingface`, `runware`
 - SmartRecruiters: `Canva`, `innergy1`
+- Recruitee: `bunq`, `jobs` (Tellent)
+- Pinpoint: `avaaz`, `workwithus`
+- Personio: `lanch`, `deskbird`
+- Teamtailor: `bankgirotab`, `doconomy`
+- Rippling: `netatwork`, `realwork`
+- Workday: `salesforce.wd12/External_Career_Site`, `adobe.wd5/external_experienced`
 
-See `docs/phase3_report.md` for ranking, evidence, tests, and limitations.
+Recruitee is implemented despite its documented auth-token requirement starting 2027-02-10; the deadline is recorded in the matrix. Workday and Rippling require per-posting detail requests for descriptions. Workday live configuration intentionally caps each board at five jobs, so those fetches are `PARTIAL_SUCCESS` and never drive closure.
+
+See `docs/phase3_report.md` for the first connector batch and `docs/EXECUTION_LOG.md` for the full execution history.
 
 ## 11. Source links
 

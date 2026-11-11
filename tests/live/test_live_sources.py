@@ -7,6 +7,7 @@ import pytest
 
 from job_indexer.config import load_sources
 from job_indexer.connectors.registry import build_connector
+from job_indexer.errors import PartialFetchError
 from job_indexer.http import HttpClient
 
 
@@ -24,6 +25,18 @@ SOURCE_NAMES = [
     "workable-runware",
     "smartrecruiters-canva",
     "smartrecruiters-innergy",
+    "recruitee-bunq",
+    "recruitee-tellent",
+    "pinpoint-avaaz",
+    "pinpoint-workwithus",
+    "personio-lanch",
+    "personio-deskbird",
+    "teamtailor-bankgirotab",
+    "teamtailor-doconomy",
+    "rippling-netatwork",
+    "rippling-realwork",
+    "workday-salesforce",
+    "workday-adobe",
 ]
 
 
@@ -34,9 +47,15 @@ def test_live_source_returns_normalizable_jobs(source_name: str) -> None:
 
     with HttpClient() as http:
         connector = build_connector(source.platform, http)
-        batch = connector.fetch(source)
-
-    assert batch.complete is True
+        if source.platform == "workday":
+            with pytest.raises(PartialFetchError) as exc_info:
+                connector.fetch(source)
+            batch = exc_info.value.batch
+            assert batch.complete is False
+            assert batch.pagination["limit_reason"] == "max_jobs_reached"
+        else:
+            batch = connector.fetch(source)
+            assert batch.complete is True
     assert len(batch.raw_jobs) > 0
 
     job = connector.normalize(batch.raw_jobs[0], source, datetime.now(timezone.utc))
@@ -44,5 +63,15 @@ def test_live_source_returns_normalizable_jobs(source_name: str) -> None:
     assert job.title
     assert job.company
     assert job.source_url.startswith("https://")
-    if source.platform in {"lever", "ashby", "workable", "smartrecruiters"}:
+    if source.platform in {
+        "lever",
+        "ashby",
+        "workable",
+        "smartrecruiters",
+        "recruitee",
+        "pinpoint",
+        "teamtailor",
+        "rippling",
+        "workday",
+    }:
         assert job.application_url is not None

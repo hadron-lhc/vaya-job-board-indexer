@@ -1,13 +1,13 @@
 {
-  "run_id": "82baba29fc244eac94b94648cec7fbe5",
+  "run_id": "9e29d7d6f7d34c02b81614f31ac95c47",
   "platform": "smartrecruiters",
   "source_instance": "smartrecruiters-canva",
   "employer": "Canva",
   "tenant": "Canva",
-  "status": "success",
-  "started_at": "2026-11-10T21:48:17.859510+00:00",
-  "completed_at": "2026-11-10T21:48:51.457206+00:00",
-  "duration_ms": 33597,
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:01:52.372929+00:00",
+  "completed_at": "2026-11-11T01:02:27.048915+00:00",
+  "duration_ms": 34676,
   "source_url": "https://jobs.smartrecruiters.com/Canva",
   "request_urls": [
     "https://api.smartrecruiters.com/v1/companies/Canva/postings?limit=100&offset=0",
@@ -61,8 +61,12 @@
   "jobs_processed": 36,
   "jobs_inserted": 0,
   "jobs_updated": 36,
+  "jobs_changed": 36,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
   "error": null,
-  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-canva/82baba29fc244eac94b94648cec7fbe5.json",
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/smartrecruiters-canva/9e29d7d6f7d34c02b81614f31ac95c47.json",
   "fields_available": [
     "application_url",
     "company",
@@ -95,8 +99,8 @@
       "employment_type": "Full-time",
       "remote_status": "unknown",
       "original_posted_at": "2026-11-06T05:28:46.192Z",
-      "first_seen_at": "2026-11-10T21:48:17.859530+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.859530+00:00"
+      "first_seen_at": "2026-11-11T01:01:52.372953+00:00",
+      "last_checked_at": "2026-11-11T01:01:52.372953+00:00"
     },
     {
       "platform": "smartrecruiters",
@@ -112,8 +116,8 @@
       "employment_type": "Full-time",
       "remote_status": "hybrid",
       "original_posted_at": "2026-11-06T02:50:39.093Z",
-      "first_seen_at": "2026-11-10T21:48:17.859530+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.859530+00:00"
+      "first_seen_at": "2026-11-11T01:01:52.372953+00:00",
+      "last_checked_at": "2026-11-11T01:01:52.372953+00:00"
     },
     {
       "platform": "smartrecruiters",
@@ -129,8 +133,8 @@
       "employment_type": "Full-time",
       "remote_status": "remote",
       "original_posted_at": "2026-11-05T23:50:44.137Z",
-      "first_seen_at": "2026-11-10T21:48:17.859530+00:00",
-      "last_checked_at": "2026-11-10T21:48:17.859530+00:00"
+      "first_seen_at": "2026-11-11T01:01:52.372953+00:00",
+      "last_checked_at": "2026-11-11T01:01:52.372953+00:00"
     }
   ]
 }

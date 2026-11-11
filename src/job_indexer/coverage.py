@@ -31,6 +31,21 @@ ACTIVE_STATUSES = {
     "VERIFIED",
 }
 
+STATUS_RANK = {
+    "NOT_RESEARCHED": 0,
+    "RESEARCHED": 1,
+    "ACCESS_BLOCKED": 1,
+    "IMPLEMENTED": 2,
+    "FIXTURE_TESTED": 3,
+    "LIVE_TESTED_ONE_TENANT": 4,
+    "LIVE_TESTED_MULTI_TENANT": 5,
+    "VERIFIED": 6,
+}
+
+
+def _stronger(left: str, right: str) -> str:
+    return left if STATUS_RANK.get(left, 0) >= STATUS_RANK.get(right, 0) else right
+
 
 def load_matrix(path: str | Path | None = None) -> list[dict[str, str]]:
     matrix_path = Path(path) if path is not None else DEFAULT_MATRIX_PATH
@@ -57,13 +72,18 @@ def build_coverage(
         successful = [
             source for source in platform_sources if source["last_success_at"] is not None
         ]
+        evidenced = [
+            source
+            for source in platform_sources
+            if source.get("last_evidence_at") is not None
+        ]
         status = row["implementation_status"]
-        if platform_key and len(successful) >= 2 and status in ACTIVE_STATUSES:
-            status = "LIVE_TESTED_MULTI_TENANT"
-        elif platform_key and successful and status in ACTIVE_STATUSES:
-            status = "LIVE_TESTED_ONE_TENANT"
-        elif platform_key and platform_sources and status in ACTIVE_STATUSES:
-            status = "IMPLEMENTED"
+        if platform_key and len(evidenced) >= 2:
+            status = _stronger(status, "LIVE_TESTED_MULTI_TENANT")
+        elif platform_key and evidenced:
+            status = _stronger(status, "LIVE_TESTED_ONE_TENANT")
+        elif platform_key and platform_sources:
+            status = _stronger(status, "IMPLEMENTED")
         counts[status] = counts.get(status, 0) + 1
         platforms.append(
             {
@@ -79,6 +99,7 @@ def build_coverage(
                 "evidence_url": row["evidence_url"],
                 "source_instances": len(platform_sources),
                 "successful_sources": len(successful),
+                "evidenced_sources": len(evidenced),
                 "jobs": sum(int(source["job_count"] or 0) for source in platform_sources),
                 "last_success_at": max(
                     (source["last_success_at"] for source in successful),

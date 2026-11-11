@@ -1,0 +1,82 @@
+{
+  "run_id": "8fe6bec5b9044007a05d424b22f1c454",
+  "platform": "teamtailor",
+  "source_instance": "teamtailor-bankgirotab",
+  "employer": "Bankgirot",
+  "tenant": "bankgirotab",
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:00:15.818827+00:00",
+  "completed_at": "2026-11-11T01:00:16.841678+00:00",
+  "duration_ms": 1022,
+  "source_url": "https://bankgirotab.teamtailor.com/jobs",
+  "request_urls": [
+    "https://bankgirotab.teamtailor.com/jobs.rss"
+  ],
+  "pagination": {
+    "total": 2,
+    "returned": 2,
+    "pagination_required": false,
+    "note": "RSS feeds may cap at 100 items."
+  },
+  "jobs_discovered": 2,
+  "jobs_processed": 2,
+  "jobs_inserted": 2,
+  "jobs_updated": 0,
+  "jobs_changed": 0,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
+  "error": null,
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/teamtailor-bankgirotab/8fe6bec5b9044007a05d424b22f1c454.json",
+  "fields_available": [
+    "application_url",
+    "company",
+    "description",
+    "external_job_id",
+    "first_seen_at",
+    "last_checked_at",
+    "location",
+    "original_posted_at",
+    "platform",
+    "remote_status",
+    "source_instance",
+    "source_url",
+    "title"
+  ],
+  "samples": [
+    {
+      "platform": "teamtailor",
+      "source_instance": "teamtailor-bankgirotab",
+      "external_job_id": "c42b268e-e155-4088-a140-d6657c1ae9cf",
+      "title": "Tech Lead för E-faktura",
+      "company": "Bankgirot",
+      "description": "<p><span><em>På Bankgirot har vi gjort ett aktivt val: att ta ansvar för något större än oss själva. Sedan 1959 har vi säkerställt att Sveriges betalningar fungerar. Just nu befinner vi oss i en unik teknisk omvandling där vi bygger en modern, eventdriven betalinfrastruktur samtidigt som vi förvaltar och säkrar dagens system. Till detta arbete söker vi nu en Tech Lead för E-faktura som vill vara med och bygga framtidens Bankgirot.</em></span></p><div><p></p></div><div><p><span><strong>Om rollen<...[truncated]",
+      "location": "Stockholm, Sweden",
+      "source_url": "https://bankgirotab.teamtailor.com/jobs/8590056-tech-lead-for-e-faktura",
+      "application_url": "https://bankgirotab.teamtailor.com/jobs/8590056-tech-lead-for-e-faktura",
+      "salary": null,
+      "employment_type": null,
+      "remote_status": "onsite",
+      "original_posted_at": "2026-10-22T11:01:31+00:00",
+      "first_seen_at": "2026-11-11T01:00:15.818851+00:00",
+      "last_checked_at": "2026-11-11T01:00:15.818851+00:00"
+    },
+    {
+      "platform": "teamtailor",
+      "source_instance": "teamtailor-bankgirotab",
+      "external_job_id": "f84d346c-2eae-4985-8737-9e5442533b7c",
+      "title": "Systemadministratör i ServiceNow",
+      "company": "Bankgirot",
+      "description": "<p><span><em>På Bankgirot har vi gjort ett aktivt val: att ta ansvar för något större än oss själva. Sedan 1959 har vi säkerställt att Sveriges betalningar fungerar. Just nu befinner vi oss i en unik teknisk omvandling där vi bygger en modern, eventdriven betalinfrastruktur samtidigt som vi förvaltar och säkrar dagens system. Till detta arbete söker vi nu en ServiceNow administratör som vill vara med och bygga framtidens Bankgirot.</em></span></p><div><p></p></div><div><p><span><strong>Om rollen...[truncated]",
+      "location": "Stockholm, Sweden",
+      "source_url": "https://bankgirotab.teamtailor.com/jobs/8434954-systemadministrator-i-servicenow",
+      "application_url": "https://bankgirotab.teamtailor.com/jobs/8434954-systemadministrator-i-servicenow",
+      "salary": null,
+      "employment_type": null,
+      "remote_status": "onsite",
+      "original_posted_at": "2026-09-22T12:34:50+00:00",
+      "first_seen_at": "2026-11-11T01:00:15.818851+00:00",
+      "last_checked_at": "2026-11-11T01:00:15.818851+00:00"
+    }
+  ]
+}

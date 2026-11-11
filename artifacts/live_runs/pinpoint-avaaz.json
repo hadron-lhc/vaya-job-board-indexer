@@ -1,0 +1,82 @@
+{
+  "run_id": "18d8687c845e4009a2597b3a9f85e596",
+  "platform": "pinpoint",
+  "source_instance": "pinpoint-avaaz",
+  "employer": "Avaaz",
+  "tenant": "avaaz",
+  "status": "SUCCESS",
+  "started_at": "2026-11-11T01:00:10.102525+00:00",
+  "completed_at": "2026-11-11T01:00:11.594769+00:00",
+  "duration_ms": 1492,
+  "source_url": "https://avaaz.pinpointhq.com/",
+  "request_urls": [
+    "https://avaaz.pinpointhq.com/postings.json"
+  ],
+  "pagination": {
+    "total": 2,
+    "returned": 2,
+    "pagination_required": false
+  },
+  "jobs_discovered": 2,
+  "jobs_processed": 2,
+  "jobs_inserted": 2,
+  "jobs_updated": 0,
+  "jobs_changed": 0,
+  "jobs_missing": 0,
+  "jobs_closed": 0,
+  "error": null,
+  "error_class": null,
+  "raw_payload_path": "/home/tachyon/workspace/proyectos-py/projects/vaya-job-board-indexer/artifacts/raw/pinpoint-avaaz/18d8687c845e4009a2597b3a9f85e596.json",
+  "fields_available": [
+    "application_url",
+    "company",
+    "description",
+    "employment_type",
+    "external_job_id",
+    "first_seen_at",
+    "last_checked_at",
+    "location",
+    "platform",
+    "remote_status",
+    "salary",
+    "source_instance",
+    "source_url",
+    "title"
+  ],
+  "samples": [
+    {
+      "platform": "pinpoint",
+      "source_instance": "pinpoint-avaaz",
+      "external_job_id": "20b6e944-fe3b-488f-b811-3c4714a433eb",
+      "title": "Senior Project Manager (Palestine)",
+      "company": "Avaaz",
+      "description": "<div><!--block--><strong>Position overview<br><br></strong>The Senior Project Manager owns operations execution and project management for the Palestine sub-team in coordination with Avaaz. This is a senior, hands-on delivery role: you will keep project workstreams on track, build the systems and reporting that give leadership visibility, ensure risk and security protocols are implemented, and turn strategy into reliable operational execution under real constraints.<br><br></div><div><!--block--...[truncated]",
+      "location": "Remote",
+      "source_url": "https://avaaz.pinpointhq.com/en/postings/20b6e944-fe3b-488f-b811-3c4714a433eb",
+      "application_url": "https://avaaz.pinpointhq.com/en/postings/20b6e944-fe3b-488f-b811-3c4714a433eb",
+      "salary": "€4,000 - €5,000 / month",
+      "employment_type": "Full-time",
+      "remote_status": "hybrid",
+      "original_posted_at": null,
+      "first_seen_at": "2026-11-11T01:00:10.102556+00:00",
+      "last_checked_at": "2026-11-11T01:00:10.102556+00:00"
+    },
+    {
+      "platform": "pinpoint",
+      "source_instance": "pinpoint-avaaz",
+      "external_job_id": "374e44ec-f97d-4372-ac83-e85d3a43be4f",
+      "title": "Senior Operations Officer (Executive Support, Project Coordination & Systems Integration)",
+      "company": "Avaaz",
+      "description": "<div><!--block-->Avaaz is seeking an exceptionally organised, proactive, and tech-savvy Senior Operations Officer to serve as a key operational partner to our Chief Operating Officer (COO). The COO oversees Finance, People &amp; Culture, Compliance, and Operations Support across our US and UK entities, and serves as Secretary of the Board.</div><div><!--block--><br></div><div><!--block-->This is a hands-on executive support role that combines day-to-day coordination with complex project coordina...[truncated]",
+      "location": "Remote",
+      "source_url": "https://avaaz.pinpointhq.com/en/postings/374e44ec-f97d-4372-ac83-e85d3a43be4f",
+      "application_url": "https://avaaz.pinpointhq.com/en/postings/374e44ec-f97d-4372-ac83-e85d3a43be4f",
+      "salary": null,
+      "employment_type": "Permanent - Full Time",
+      "remote_status": "remote",
+      "original_posted_at": null,
+      "first_seen_at": "2026-11-11T01:00:10.102556+00:00",
+      "last_checked_at": "2026-11-11T01:00:10.102556+00:00"
+    }
+  ]
+}

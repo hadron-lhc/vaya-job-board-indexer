@@ -3,6 +3,7 @@ from __future__ import annotations
 import html as html_module
 import re
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from typing import Any
 
 
@@ -37,6 +38,14 @@ def normalize_employment_type(value: Any) -> str | None:
         "internship": "Intern",
         "temporary": "Temporary",
         "permanent": "Permanent",
+        "fulltimepermanent": "Full-time",
+        "fulltimefixedterm": "Full-time",
+        "fulltimetemporary": "Temporary",
+        "parttimepermanent": "Part-time",
+        "parttimefixedterm": "Part-time",
+        "freelance": "Freelance",
+        "fixedterm": "Fixed-term",
+        "fixedtermcontract": "Fixed-term",
     }
     return known.get(key, text)
 
@@ -129,3 +138,29 @@ def normalize_key(value: Any) -> str | None:
     text = re.sub(r"[^a-z0-9]+", "-", text)
     text = re.sub(r"-+", "-", text).strip("-")
     return text or None
+
+
+def parse_recruitee_datetime(value: Any) -> str | None:
+    text = non_empty_str(value)
+    if text is None:
+        return None
+    for fmt in ("%Y-%m-%d %H:%M:%S UTC", "%Y-%m-%d %H:%M:%S"):
+        try:
+            parsed = datetime.strptime(text, fmt).replace(tzinfo=timezone.utc)
+            return parsed.isoformat()
+        except ValueError:
+            continue
+    return text
+
+
+def parse_rfc822_datetime(value: Any) -> str | None:
+    text = non_empty_str(value)
+    if text is None:
+        return None
+    try:
+        parsed = parsedate_to_datetime(text)
+    except (TypeError, ValueError):
+        return text
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc).isoformat()

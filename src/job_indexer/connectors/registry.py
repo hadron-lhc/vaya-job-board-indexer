@@ -5,8 +5,14 @@ from .ashby import AshbyConnector
 from .base import Connector
 from .greenhouse import GreenhouseConnector
 from .lever import LeverConnector
+from .personio import PersonioConnector
+from .pinpoint import PinpointConnector
+from .recruitee import RecruiteeConnector
+from .rippling import RipplingConnector
 from .smartrecruiters import SmartRecruitersConnector
+from .teamtailor import TeamtailorConnector
 from .workable import WorkableConnector
+from .workday import WorkdayConnector
 
 
 SUPPORTED_PLATFORMS = (
@@ -15,6 +21,12 @@ SUPPORTED_PLATFORMS = (
     "ashby",
     "workable",
     "smartrecruiters",
+    "recruitee",
+    "pinpoint",
+    "personio",
+    "teamtailor",
+    "rippling",
+    "workday",
 )
 
 
@@ -29,4 +41,16 @@ def build_connector(platform: str, http: HttpClient) -> Connector:
         return WorkableConnector(http)
     if platform == "smartrecruiters":
         return SmartRecruitersConnector(http)
+    if platform == "recruitee":
+        return RecruiteeConnector(http)
+    if platform == "pinpoint":
+        return PinpointConnector(http)
+    if platform == "personio":
+        return PersonioConnector(http)
+    if platform == "teamtailor":
+        return TeamtailorConnector(http)
+    if platform == "rippling":
+        return RipplingConnector(http)
+    if platform == "workday":
+        return WorkdayConnector(http)
     raise ValueError(f"unsupported platform: {platform!r}")
